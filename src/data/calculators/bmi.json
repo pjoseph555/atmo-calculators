@@ -1,0 +1,56 @@
+{
+  "id": "bmi",
+  "name": "Body Mass Index (BMI)",
+  "description": "Calculates BMI from weight and height with interpretation.",
+  "category": "Anthropometrics",
+  "status": "active",
+  "complexity": "simple",
+  "version": 1,
+  "createdAt": "2026-03-05T00:00:00.000Z",
+  "updatedAt": "2026-03-05T00:00:00.000Z",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "min": 1,
+      "max": 500,
+      "defaultUnit": "kg",
+      "units": [
+        { "label": "kg", "factor": 1 },
+        { "label": "lb", "factor": 0.453592 }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "min": 50,
+      "max": 300,
+      "defaultUnit": "cm",
+      "units": [
+        { "label": "cm", "factor": 0.01 },
+        { "label": "m", "factor": 1 },
+        { "label": "in", "factor": 0.0254 }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "bmi",
+      "label": "BMI",
+      "formula": "weight / (height ^ 2)",
+      "precision": 1
+    }
+  ],
+  "report": {
+    "formula": "IF(bmi < 18.5, 'underweight', IF(bmi < 25, 'normal', IF(bmi < 30, 'overweight', 'obese')))",
+    "variants": [
+      { "id": "underweight", "template": "BMI of {bmi} — Underweight. Consider consulting a healthcare provider." },
+      { "id": "normal", "template": "BMI of {bmi} — Normal weight. Well within healthy range." },
+      { "id": "overweight", "template": "BMI of {bmi} — Overweight. Lifestyle modifications may be beneficial." },
+      { "id": "obese", "template": "BMI of {bmi} — Obese. Consultation with a healthcare provider is recommended." }
+    ]
+  }
+}
