@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -21,11 +20,6 @@ interface Props {
 }
 
 export function OutputsSection({ outputs, inputs, onChange }: Props) {
-  // All input ids + prior output ids are available as formula variables
-  const availableVars = [
-    ...inputs.map((i) => i.id),
-    ...outputs.map((o) => o.id),
-  ];
 
   function addOutput() {
     const id = `output_${Date.now()}`;
