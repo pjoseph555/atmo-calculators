@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Link from "next/link";
+import { ImportButton } from "@/components/ImportButton";
 import type { CalcComplexity, CalcStatus } from "@/types/calculator";
 
 const statusColor: Record<CalcStatus, string> = {
@@ -31,9 +32,15 @@ export default function HomePage() {
             {calculators.length} calculator{calculators.length !== 1 ? "s" : ""}
           </p>
         </div>
-        <Button asChild>
-          <Link href="/calculators/new">+ New Calculator</Link>
-        </Button>
+        <div className="flex gap-2">
+          <ImportButton />
+          <Button variant="outline" asChild>
+            <a href="/api/export" download="atmo-calculators-export.json">Export All</a>
+          </Button>
+          <Button asChild>
+            <Link href="/calculators/new">+ New Calculator</Link>
+          </Button>
+        </div>
       </div>
 
       {calculators.length === 0 ? (

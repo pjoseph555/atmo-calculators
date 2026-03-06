@@ -31,9 +31,19 @@ export default async function CalculatorPage({ params }: Props) {
 
       <CalculatorRenderer definition={calc} />
 
-      <div className="mt-8 flex gap-3">
+      <div className="mt-8 flex gap-3 flex-wrap">
         <Button variant="outline" asChild>
           <Link href={`/calculators/${id}/edit`}>Edit</Link>
+        </Button>
+        <Button variant="outline" asChild>
+          <a href={`/api/calculators/${id}/export`} download={`${id}.html`}>
+            Export HTML
+          </a>
+        </Button>
+        <Button variant="outline" asChild>
+          <a href={`/api/calculators/${id}`} download={`${id}.json`}>
+            Export JSON
+          </a>
         </Button>
       </div>
     </div>

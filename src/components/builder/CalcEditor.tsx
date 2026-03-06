@@ -105,11 +105,18 @@ export function CalcEditor({ initial }: Props) {
             ← Library
           </Button>
           {!isNew && (
-            <Button variant="outline" asChild>
-              <a href={`/calculators/${calc.id}`} target="_blank">
-                Preview
-              </a>
-            </Button>
+            <>
+              <Button variant="outline" asChild>
+                <a href={`/calculators/${calc.id}`} target="_blank">
+                  Preview
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href={`/api/calculators/${calc.id}/export`} download={`${calc.id}.html`}>
+                  Export HTML
+                </a>
+              </Button>
+            </>
           )}
           <Button onClick={save} disabled={saving}>
             {saving ? "Saving…" : isNew ? "Create" : dirty ? "Save *" : "Save"}
