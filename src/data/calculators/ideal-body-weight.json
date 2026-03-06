@@ -1,0 +1,43 @@
+{
+  "id": "ideal-body-weight",
+  "name": "Ideal Body Weight",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "inches",
+      "units": [
+        {
+          "label": "inches",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.3937
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "male",
+          "value": 1
+        },
+        {
+          "label": "female",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.950Z",
+  "updatedAt": "2026-03-06T13:16:03.950Z"
+}

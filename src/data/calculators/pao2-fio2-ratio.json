@@ -1,0 +1,22 @@
+{
+  "id": "pao2-fio2-ratio",
+  "name": "PaO2 / FiO2 Ratio",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    },
+    {
+      "type": "numeric",
+      "id": "f2",
+      "label": "f2"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.355Z",
+  "updatedAt": "2026-03-06T13:16:04.355Z"
+}

@@ -1,0 +1,162 @@
+{
+  "id": "abbreviated-mental-test",
+  "name": "Abbreviated Mental Test",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "knows_age",
+      "label": "Knows Age",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_date_of_birth",
+      "label": "Knows Date of Birth",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_time_nearest_hour",
+      "label": "Knows Time (nearest hour)",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_year",
+      "label": "Knows Year",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_hospital_name",
+      "label": "Knows Hospital Name",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "recognizes_2_people",
+      "label": "Recognizes 2 People",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_date_of_major_event",
+      "label": "Knows Date of Major Event",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "knows_name_of_cur_leader",
+      "label": "Knows Name of Cur. Leader",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "can_count_20_1",
+      "label": "Can Count 20 -> 1",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "can_repeat_address_given_at_beginning_of",
+      "label": "Can Repeat Address (given at beginning of test)",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.086Z",
+  "updatedAt": "2026-03-06T13:16:04.086Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "cardiac-output-echo-81312",
+  "name": "Cardiac Output (Echo)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "lvot_diameter",
+      "label": "LVOT Diameter"
+    },
+    {
+      "type": "numeric",
+      "id": "time_velocity_integral",
+      "label": "Time Velocity Integral"
+    },
+    {
+      "type": "numeric",
+      "id": "heart_rate",
+      "label": "Heart Rate"
+    },
+    {
+      "type": "numeric",
+      "id": "bsa",
+      "label": "BSA"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "cardiac_output",
+      "label": "Cardiac Output",
+      "formula": "3.1415926536 * heart_rate * lvot_diameter ^ 2 * time_velocity_integral / 4 / 1000",
+      "precision": 2,
+      "defaultUnit": "L/min"
+    },
+    {
+      "type": "numeric",
+      "id": "cardiac_index",
+      "label": "Cardiac Index",
+      "formula": "cardiac_output / bsa",
+      "precision": 2,
+      "defaultUnit": "L/min/m^2"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.170Z",
+  "updatedAt": "2026-03-06T13:17:08.170Z"
+}

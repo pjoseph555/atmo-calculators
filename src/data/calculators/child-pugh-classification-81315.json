@@ -1,0 +1,111 @@
+{
+  "id": "child-pugh-classification-81315",
+  "name": "Child-Pugh Classification",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "ascites",
+      "label": "Ascites",
+      "options": [
+        {
+          "label": "None",
+          "value": 1
+        },
+        {
+          "label": "Mild",
+          "value": 2
+        },
+        {
+          "label": "Severe",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "albumin",
+      "label": "Albumin",
+      "options": [
+        {
+          "label": "Less than 28 g/L",
+          "value": 3
+        },
+        {
+          "label": "28 to 35 g/L",
+          "value": 2
+        },
+        {
+          "label": "More than 35 g/L",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "bilirubin",
+      "label": "Bilirubin",
+      "options": [
+        {
+          "label": "Less than 34 umol/L",
+          "value": 1
+        },
+        {
+          "label": "34 to 51 umol/L",
+          "value": 2
+        },
+        {
+          "label": "More than 51 umol/L",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "encephalopathy",
+      "label": "Encephalopathy",
+      "options": [
+        {
+          "label": "None",
+          "value": 1
+        },
+        {
+          "label": "Grade I to II",
+          "value": 2
+        },
+        {
+          "label": "Grade III to IV",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "inr_pt",
+      "label": "INR (PT)",
+      "options": [
+        {
+          "label": "Less than 1.7 (>50%)",
+          "value": 1
+        },
+        {
+          "label": "1.8 - 2.3 (40-50%)",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "grade",
+      "label": "Grade",
+      "formula": "ascites + albumin + bilirubin + encephalopathy + inr_pt",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.184Z",
+  "updatedAt": "2026-03-06T13:17:08.184Z"
+}

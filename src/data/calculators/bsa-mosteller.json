@@ -1,0 +1,48 @@
+{
+  "id": "bsa-mosteller",
+  "name": "BSA (Mosteller)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "cm",
+      "units": [
+        {
+          "label": "cm",
+          "factor": 1
+        },
+        {
+          "label": "in",
+          "factor": 2.54
+        },
+        {
+          "label": "ft",
+          "factor": 30.48
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lb",
+          "factor": 0.454
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.031Z",
+  "updatedAt": "2026-03-06T13:16:04.031Z"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "corrected-na-glucose",
+  "name": "Corrected Na (glucose)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "na",
+      "label": "Na"
+    },
+    {
+      "type": "numeric",
+      "id": "glucose",
+      "label": "Glucose"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.168Z",
+  "updatedAt": "2026-03-06T13:16:04.168Z"
+}

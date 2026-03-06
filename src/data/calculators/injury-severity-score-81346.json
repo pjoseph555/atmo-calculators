@@ -1,0 +1,241 @@
+{
+  "id": "injury-severity-score-81346",
+  "name": "Injury Severity Score",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "input_for_only_the_3_most_severe_injurie",
+      "label": "Input for ONLY the 3 most severe injuries",
+      "options": [
+        {
+          "label": "",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "head_and_neck",
+      "label": "Head and Neck",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 5
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "face",
+      "label": "Face",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 5
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "thorax",
+      "label": "Thorax",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 5
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "abdomen",
+      "label": "Abdomen",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 5
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "extremities",
+      "label": "Extremities",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 5
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "external",
+      "label": "External",
+      "options": [
+        {
+          "label": "none",
+          "value": 0
+        },
+        {
+          "label": "Minor",
+          "value": 1
+        },
+        {
+          "label": "Moderate",
+          "value": 2
+        },
+        {
+          "label": "Serious",
+          "value": 3
+        },
+        {
+          "label": "Severe",
+          "value": 4
+        },
+        {
+          "label": "Critical",
+          "value": 6
+        },
+        {
+          "label": "Unsurvivable",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "IF(head_and_neck == 6 OR face == 6 OR thorax == 6 OR abdomen == 6 OR extremities == 6 OR external == 6, 75, head_and_neck ^ 2 + face ^ 2 + thorax ^ 2 + abdomen ^ 2 + extremities ^ 2 + external ^ 2)",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.325Z",
+  "updatedAt": "2026-03-06T13:17:08.325Z"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "disease-activity-scores",
+  "name": "Disease Activity Scores",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "tender_joint_count",
+      "label": "Tender Joint Count"
+    },
+    {
+      "type": "numeric",
+      "id": "swollen_joint_count",
+      "label": "Swollen Joint Count"
+    },
+    {
+      "type": "numeric",
+      "id": "erythrocyte_sedimentation_rate",
+      "label": "Erythrocyte Sedimentation Rate"
+    },
+    {
+      "type": "numeric",
+      "id": "subject_assessment",
+      "label": "Subject Assessment"
+    },
+    {
+      "type": "numeric",
+      "id": "initial_das",
+      "label": "Initial DAS"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "current_das",
+      "label": "Current DAS",
+      "formula": "0.56 * sqrt(tender_joint_count) + 0.28 * sqrt(swollen_joint_count) + 0.70 * ln(erythrocyte_sedimentation_rate) + 0.014 * subject_assessment",
+      "precision": 2,
+      "defaultUnit": "units"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.205Z",
+  "updatedAt": "2026-03-06T13:16:04.205Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hba1c-to-glucose",
+  "name": "HbA1C to Glucose",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "hba1c",
+      "label": "HbA1C"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.989Z",
+  "updatedAt": "2026-03-06T13:16:03.989Z"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "carbamazepine-dosing-83944",
+  "name": "Carbamazepine Dosing",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 0.85
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height"
+    },
+    {
+      "type": "numeric",
+      "id": "actual_total_weight",
+      "label": "Actual Total Weight"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "loading_dose_min",
+      "label": "Loading Dose (min)",
+      "formula": "IF(sex == 1, IF(50 + 2.3 * (height - 60) > 0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 2 * (0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 2 * (50 + 2.3 * (height - 60))), IF(45.5 + 2.3 * (height - 60) > 0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 2 * (0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 2 * (45.5 + 2.3 * (height - 60))))",
+      "precision": 2,
+      "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "loading_dose_max",
+      "label": "Loading Dose (max)",
+      "formula": "IF(sex == 1, IF(50 + 2.3 * (height - 60) > 0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 3 * (0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 3 * (50 + 2.3 * (height - 60))), IF(45.5 + 2.3 * (height - 60) > 0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 3 * (0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 3 * (45.5 + 2.3 * (height - 60))))",
+      "precision": 2,
+      "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "maintenance_dose",
+      "label": "Maintenance Dose",
+      "formula": "IF(sex == 1, IF(50 + 2.3 * (height - 60) > 0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 10 * (0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 10 * (50 + 2.3 * (height - 60))), IF(45.5 + 2.3 * (height - 60) > 0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 10 * (0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 10 * (45.5 + 2.3 * (height - 60))))",
+      "precision": 2,
+      "defaultUnit": "mg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.546Z",
+  "updatedAt": "2026-03-06T13:17:08.546Z"
+}

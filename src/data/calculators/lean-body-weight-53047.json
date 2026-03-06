@@ -1,0 +1,75 @@
+{
+  "id": "lean-body-weight-53047",
+  "name": "Lean Body Weight",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lbs",
+          "factor": 0.454
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.01
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        },
+        {
+          "label": "ft",
+          "factor": 0.3048
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "male",
+          "value": 1
+        },
+        {
+          "label": "female",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "lean_body_weight",
+      "label": "Lean Body Weight",
+      "formula": "IF(sex == 1, 1.1 * weight - 128 * (weight ^ 2 / (100 * height) ^ 2), 1.07 * weight - 148 * (weight ^ 2 / (100 * height) ^ 2))",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.108Z",
+  "updatedAt": "2026-03-06T13:17:08.108Z"
+}

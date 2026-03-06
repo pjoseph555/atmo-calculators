@@ -1,0 +1,22 @@
+{
+  "id": "q-tc",
+  "name": "Q-Tc",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "q_t_interval",
+      "label": "Q-T interval"
+    },
+    {
+      "type": "numeric",
+      "id": "r_r_interval",
+      "label": "R-R interval"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.388Z",
+  "updatedAt": "2026-03-06T13:16:04.388Z"
+}

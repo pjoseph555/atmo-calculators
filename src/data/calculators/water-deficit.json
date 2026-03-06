@@ -1,0 +1,42 @@
+{
+  "id": "water-deficit",
+  "name": "Water Deficit",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "measured_na",
+      "label": "Measured Na"
+    },
+    {
+      "type": "numeric",
+      "id": "target_na",
+      "label": "Target Na"
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.461Z",
+  "updatedAt": "2026-03-06T13:16:04.461Z"
+}

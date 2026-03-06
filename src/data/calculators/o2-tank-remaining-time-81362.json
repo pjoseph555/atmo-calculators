@@ -1,0 +1,36 @@
+{
+  "id": "o2-tank-remaining-time-81362",
+  "name": "O2 Tank Remaining Time",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "tank_pressure",
+      "label": "Tank Pressure"
+    },
+    {
+      "type": "numeric",
+      "id": "flow_rate",
+      "label": "Flow Rate"
+    },
+    {
+      "type": "numeric",
+      "id": "tank_volume",
+      "label": "Tank Volume"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "time_left",
+      "label": "Time Left",
+      "formula": "tank_volume * tank_pressure / flow_rate",
+      "precision": 2,
+      "defaultUnit": "min"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.385Z",
+  "updatedAt": "2026-03-06T13:17:08.385Z"
+}

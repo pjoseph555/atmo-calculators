@@ -1,0 +1,26 @@
+{
+  "id": "heart-rate-ekg-81341",
+  "name": "Heart Rate (EKG)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "r_r_interval",
+      "label": "R-R interval"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "heart_rate",
+      "label": "Heart Rate",
+      "formula": "60 / r_r_interval",
+      "precision": 2,
+      "defaultUnit": "bpm"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.307Z",
+  "updatedAt": "2026-03-06T13:17:08.307Z"
+}

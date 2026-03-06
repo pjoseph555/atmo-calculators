@@ -1,0 +1,126 @@
+{
+  "id": "pediatric-trauma-score",
+  "name": "Pediatric Trauma Score",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "weight",
+      "label": "Weight",
+      "options": [
+        {
+          "label": "Less than 10 kg (-1)",
+          "value": -1
+        },
+        {
+          "label": "10 - 20 kg (1)",
+          "value": 1
+        },
+        {
+          "label": "More than 20 kg (2)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "airways",
+      "label": "Airways",
+      "options": [
+        {
+          "label": "Unmaintainable (-1)",
+          "value": -1
+        },
+        {
+          "label": "Maintainable (1)",
+          "value": 1
+        },
+        {
+          "label": "Normal (2)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "systolic_bp",
+      "label": "Systolic BP",
+      "options": [
+        {
+          "label": "Less 50 mmHg (-1)",
+          "value": -1
+        },
+        {
+          "label": "50 to 90 mmHg (1)",
+          "value": 1
+        },
+        {
+          "label": "More than 90 mmHg (2)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "cns",
+      "label": "CNS",
+      "options": [
+        {
+          "label": "Coma (-1)",
+          "value": -1
+        },
+        {
+          "label": "Obtunded (1)",
+          "value": 1
+        },
+        {
+          "label": "Awake (2)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "cutaneous_wound",
+      "label": "Cutaneous Wound",
+      "options": [
+        {
+          "label": "Major (-1)",
+          "value": -1
+        },
+        {
+          "label": "Minor (1)",
+          "value": 1
+        },
+        {
+          "label": "None (2)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "fracture",
+      "label": "Fracture",
+      "options": [
+        {
+          "label": "Open / multiple (-1)",
+          "value": -1
+        },
+        {
+          "label": "Closed (1)",
+          "value": 1
+        },
+        {
+          "label": "None (2)",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.360Z",
+  "updatedAt": "2026-03-06T13:16:04.360Z"
+}

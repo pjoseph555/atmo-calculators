@@ -1,0 +1,34 @@
+{
+  "id": "nac-dosage-regimen",
+  "name": "NAC Dosage Regimen",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "patient_s_weight",
+      "label": "Patient's Weight"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "first_dose",
+      "label": "First Dose",
+      "formula": "150 * patient_s_weight",
+      "precision": 2,
+      "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "next_4_hours",
+      "label": "Next 4 hours",
+      "formula": "50 * patient_s_weight",
+      "precision": 2,
+      "defaultUnit": "mg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.331Z",
+  "updatedAt": "2026-03-06T13:16:04.331Z"
+}

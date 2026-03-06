@@ -1,0 +1,87 @@
+{
+  "id": "chads2-score",
+  "name": "CHADS2 Score",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "chronic_heart_failure",
+      "label": "Chronic Heart Failure",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "hypertension",
+      "label": "Hypertension",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "age_75_yr",
+      "label": "Age >= 75 yr",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "diabetes_mellitus",
+      "label": "Diabetes Mellitus",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "prior_stroke_or_tia",
+      "label": "Prior Stroke or TIA",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.143Z",
+  "updatedAt": "2026-03-06T13:16:04.143Z"
+}

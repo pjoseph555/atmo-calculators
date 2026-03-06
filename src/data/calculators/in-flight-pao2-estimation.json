@@ -1,0 +1,38 @@
+{
+  "id": "in-flight-pao2-estimation",
+  "name": "In-Flight PaO2 Estimation",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    },
+    {
+      "type": "numeric",
+      "id": "paco2",
+      "label": "PaCO2"
+    },
+    {
+      "type": "numeric",
+      "id": "altitude",
+      "label": "Altitude",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "ft",
+          "factor": 0.3048
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.280Z",
+  "updatedAt": "2026-03-06T13:16:04.280Z"
+}

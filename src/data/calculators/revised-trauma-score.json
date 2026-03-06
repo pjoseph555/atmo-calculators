@@ -1,0 +1,93 @@
+{
+  "id": "revised-trauma-score",
+  "name": "Revised Trauma Score",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "glasgow",
+      "label": "Glasgow",
+      "options": [
+        {
+          "label": "3 pts - 0",
+          "value": 0
+        },
+        {
+          "label": "4 to 5 pts - 1",
+          "value": 1
+        },
+        {
+          "label": "6 to 8 pts - 2",
+          "value": 2
+        },
+        {
+          "label": "9 to 12 pts - 3",
+          "value": 3
+        },
+        {
+          "label": "13 to 15 pts - 4",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "systolic_bp",
+      "label": "Systolic BP",
+      "options": [
+        {
+          "label": "No reading - 0",
+          "value": 0
+        },
+        {
+          "label": "Less than 50 mmHg - 1",
+          "value": 1
+        },
+        {
+          "label": "50 to 75 mmHg - 2",
+          "value": 2
+        },
+        {
+          "label": "76 to 89 mmHg - 3",
+          "value": 3
+        },
+        {
+          "label": "More than 90 mmHg - 4",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "respiratory_rate",
+      "label": "Respiratory Rate",
+      "options": [
+        {
+          "label": "Apnea - 0",
+          "value": 0
+        },
+        {
+          "label": "1 to 5 breath/min - 1",
+          "value": 1
+        },
+        {
+          "label": "6 to 9 breath/min - 2",
+          "value": 2
+        },
+        {
+          "label": "10 to 29 breath/min - 4",
+          "value": 4
+        },
+        {
+          "label": "More than 29 breath/min - 3",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.407Z",
+  "updatedAt": "2026-03-06T13:16:04.407Z"
+}

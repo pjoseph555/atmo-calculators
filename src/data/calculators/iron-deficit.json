@@ -1,0 +1,27 @@
+{
+  "id": "iron-deficit",
+  "name": "Iron Deficit",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "target_hb",
+      "label": "Target Hb"
+    },
+    {
+      "type": "numeric",
+      "id": "actual_hb",
+      "label": "Actual Hb"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.294Z",
+  "updatedAt": "2026-03-06T13:16:04.294Z"
+}

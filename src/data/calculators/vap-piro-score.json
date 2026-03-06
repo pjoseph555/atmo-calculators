@@ -1,0 +1,72 @@
+{
+  "id": "vap-piro-score",
+  "name": "VAP PIRO Score",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "comorbidities",
+      "label": "Comorbidities",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "bacteremia",
+      "label": "Bacteremia",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "systolic_bp_90_mmhg",
+      "label": "Systolic BP < 90 mmHg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "ards",
+      "label": "ARDS",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.456Z",
+  "updatedAt": "2026-03-06T13:16:04.456Z"
+}

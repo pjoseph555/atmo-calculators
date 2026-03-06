@@ -1,0 +1,27 @@
+{
+  "id": "absolute-neutrophil-count",
+  "name": "Absolute Neutrophil Count",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "total_wbc",
+      "label": "Total WBC"
+    },
+    {
+      "type": "numeric",
+      "id": "neutrophils",
+      "label": "Neutrophils"
+    },
+    {
+      "type": "numeric",
+      "id": "bands",
+      "label": "Bands"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.025Z",
+  "updatedAt": "2026-03-06T13:16:04.025Z"
+}

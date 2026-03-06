@@ -1,0 +1,42 @@
+{
+  "id": "expected-pco2-winters-81330",
+  "name": "Expected PCO2 (Winters)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "o1",
+      "label": "o1",
+      "formula": "1.5 * f1 + 8",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    },
+    {
+      "type": "numeric",
+      "id": "lower",
+      "label": "Lower:",
+      "formula": "o1 - 2",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    },
+    {
+      "type": "numeric",
+      "id": "upper",
+      "label": "Upper:",
+      "formula": "o1 + 2",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.255Z",
+  "updatedAt": "2026-03-06T13:17:08.255Z"
+}

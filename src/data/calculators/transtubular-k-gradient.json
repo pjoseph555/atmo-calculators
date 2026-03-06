@@ -1,0 +1,32 @@
+{
+  "id": "transtubular-k-gradient",
+  "name": "Transtubular K Gradient",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "serum_k",
+      "label": "Serum K"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_osmolality",
+      "label": "Serum Osmolality"
+    },
+    {
+      "type": "numeric",
+      "id": "urine_k",
+      "label": "Urine K"
+    },
+    {
+      "type": "numeric",
+      "id": "urine_osmolality",
+      "label": "Urine Osmolality"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.443Z",
+  "updatedAt": "2026-03-06T13:16:04.443Z"
+}

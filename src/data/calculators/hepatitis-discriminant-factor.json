@@ -1,0 +1,27 @@
+{
+  "id": "hepatitis-discriminant-factor",
+  "name": "Hepatitis Discriminant Factor",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "bilirubin",
+      "label": "Bilirubin"
+    },
+    {
+      "type": "numeric",
+      "id": "prothrombin_time",
+      "label": "Prothrombin Time"
+    },
+    {
+      "type": "numeric",
+      "id": "control",
+      "label": "Control"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.275Z",
+  "updatedAt": "2026-03-06T13:16:04.275Z"
+}

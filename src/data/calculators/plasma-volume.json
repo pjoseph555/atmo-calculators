@@ -1,0 +1,22 @@
+{
+  "id": "plasma-volume",
+  "name": "Plasma Volume",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "hematocrit",
+      "label": "Hematocrit"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.364Z",
+  "updatedAt": "2026-03-06T13:16:04.364Z"
+}

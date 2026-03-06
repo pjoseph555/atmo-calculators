@@ -1,0 +1,150 @@
+{
+  "id": "digoxin-dosing",
+  "name": "Digoxin Dosing",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 0.85
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "actual_total_weight",
+      "label": "Actual Total Weight"
+    },
+    {
+      "type": "dropdown",
+      "id": "obese",
+      "label": "Obese?",
+      "options": [
+        {
+          "label": "Yes",
+          "value": 1
+        },
+        {
+          "label": "No",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height"
+    },
+    {
+      "type": "dropdown",
+      "id": "renal_failure",
+      "label": "Renal Failure?",
+      "options": [
+        {
+          "label": "Yes",
+          "value": 1
+        },
+        {
+          "label": "No",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "nyha_class",
+      "label": "NYHA class",
+      "options": [
+        {
+          "label": "I/II HF",
+          "value": 40
+        },
+        {
+          "label": "III/IV HF",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f_form",
+      "label": "F (form)",
+      "options": [
+        {
+          "label": "tablet",
+          "value": 0.7
+        },
+        {
+          "label": "capsule",
+          "value": 0.9
+        },
+        {
+          "label": "elixir",
+          "value": 0.8
+        },
+        {
+          "label": "IV",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    },
+    {
+      "type": "numeric",
+      "id": "desired_css",
+      "label": "Desired Css"
+    },
+    {
+      "type": "numeric",
+      "id": "dosage_interval",
+      "label": "Dosage Interval"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "vd",
+      "label": "Vd",
+      "formula": "IF(obese == 1, IF(sex == 1, 4.5 * (50 + 2.3 * (height - 60)), 4.5 * (45.5 + 2.3 * (height - 60))), IF(renal_failure == 1, IF(sex == 1, 7 * (50 + 2.3 * (height - 60)), 7 * (45.5 + 2.3 * (height - 60))), IF(renal_failure == 1, 4.5 * actual_total_weight, 7 * actual_total_weight)))",
+      "precision": 2,
+      "defaultUnit": "L"
+    },
+    {
+      "type": "numeric",
+      "id": "loading_dose",
+      "label": "Loading Dose",
+      "formula": "desired_css * vd / f_form",
+      "precision": 2,
+      "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "maintenance_dose_iv",
+      "label": "Maintenance Dose (IV)",
+      "formula": "IF(nyha_class == 40, desired_css * 0.06 * (1.303 * ((140 - age) * actual_total_weight * sex / (72 * serum_creatinine)) + 40) / f_form * dosage_interval, desired_css * 0.06 * (1.303 * ((140 - age) * actual_total_weight * sex / (72 * serum_creatinine)) + 20) / f_form * dosage_interval)",
+      "precision": 2,
+      "defaultUnit": "mcg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.481Z",
+  "updatedAt": "2026-03-06T13:16:04.481Z"
+}

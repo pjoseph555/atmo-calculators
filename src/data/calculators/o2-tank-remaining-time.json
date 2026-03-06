@@ -1,0 +1,27 @@
+{
+  "id": "o2-tank-remaining-time",
+  "name": "O2 Tank Remaining Time",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "tank_pressure",
+      "label": "Tank Pressure"
+    },
+    {
+      "type": "numeric",
+      "id": "flow_rate",
+      "label": "Flow Rate"
+    },
+    {
+      "type": "numeric",
+      "id": "tank_volume",
+      "label": "Tank Volume"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.350Z",
+  "updatedAt": "2026-03-06T13:16:04.350Z"
+}

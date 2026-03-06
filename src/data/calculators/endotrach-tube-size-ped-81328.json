@@ -1,0 +1,26 @@
+{
+  "id": "endotrach-tube-size-ped-81328",
+  "name": "Endotrach. Tube Size (Ped)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "uncuffed_tube_size",
+      "label": "Uncuffed Tube Size",
+      "formula": "age * 0.25 + 4",
+      "precision": 2,
+      "defaultUnit": "mm"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.245Z",
+  "updatedAt": "2026-03-06T13:17:08.245Z"
+}

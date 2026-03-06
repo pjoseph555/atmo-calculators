@@ -1,0 +1,62 @@
+{
+  "id": "gfr-for-adults-mdrd",
+  "name": "GFR for Adults (MDRD)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_bun",
+      "label": "Serum BUN"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_albumin",
+      "label": "Serum Albumin"
+    },
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "male",
+          "value": 1
+        },
+        {
+          "label": "female",
+          "value": 0.762
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "black",
+      "label": "Black?",
+      "options": [
+        {
+          "label": "Yes",
+          "value": 1.18
+        },
+        {
+          "label": "No",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.955Z",
+  "updatedAt": "2026-03-06T13:16:03.955Z"
+}

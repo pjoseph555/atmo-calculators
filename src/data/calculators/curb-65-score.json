@@ -1,0 +1,87 @@
+{
+  "id": "curb-65-score",
+  "name": "CURB-65 Score",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "confusion_amts_8",
+      "label": "Confusion (AMTS <=8)",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "bun_20_mg_dl",
+      "label": "BUN > 20 mg/dL",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "resp_rate_30_min",
+      "label": "Resp. rate >=30/min",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sbp_90_or_dbp_60_mmhg",
+      "label": "SBP < 90 or DBP <= 60 mmHg",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "age_65_yr",
+      "label": "Age >= 65 yr",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.186Z",
+  "updatedAt": "2026-03-06T13:16:04.186Z"
+}

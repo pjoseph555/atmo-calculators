@@ -1,0 +1,604 @@
+{
+  "migratedAt": "2026-03-06T13:17:08.547Z",
+  "total": 122,
+  "converted": 119,
+  "skipped": 3,
+  "errors": 0,
+  "calculators": [
+    {
+      "id": "bsa-dubois-dubois-24528",
+      "name": "BSA (DuBois & DuBois)",
+      "status": "simple"
+    },
+    {
+      "id": "bsa-haycock-24529",
+      "name": "BSA (Haycock)",
+      "status": "simple"
+    },
+    {
+      "id": "bsa-gehan-and-george-24530",
+      "name": "BSA (Gehan and George)",
+      "status": "simple"
+    },
+    {
+      "id": "ideal-body-weight-24531",
+      "name": "Ideal Body Weight",
+      "status": "moderate"
+    },
+    {
+      "id": "gfr-for-adults-mdrd-24532",
+      "name": "GFR for Adults (MDRD)",
+      "status": "moderate"
+    },
+    {
+      "id": "volume-conversions-24533",
+      "name": "Volume Conversions",
+      "status": "simple"
+    },
+    {
+      "id": "anion-gap-24534",
+      "name": "Anion Gap",
+      "status": "simple"
+    },
+    {
+      "id": "factor-viii-dosing-calculator-24535",
+      "name": "Factor VIII Dosing Calculator",
+      "status": "simple"
+    },
+    {
+      "id": "factor-ix-dosing-calculator-24536",
+      "name": "Factor IX Dosing Calculator",
+      "status": "simple"
+    },
+    {
+      "id": "absolute-reticulocyte-count-24537",
+      "name": "Absolute Reticulocyte Count",
+      "status": "simple"
+    },
+    {
+      "id": "glucose-to-hba1c-24538",
+      "name": "Glucose to HbA1C",
+      "status": "simple"
+    },
+    {
+      "id": "hba1c-to-glucose-24539",
+      "name": "HbA1C to Glucose",
+      "status": "simple"
+    },
+    {
+      "id": "ldl-cholesterol-linked-only-to-old-tools-24540",
+      "name": "LDL Cholesterol LINKED ONLY TO OLD TOOLS",
+      "status": "simple"
+    },
+    {
+      "id": "length-conversions-24541",
+      "name": "Length Conversions",
+      "status": "simple"
+    },
+    {
+      "id": "international-normalized-ratio-inr-24542",
+      "name": "International Normalized Ratio (INR)",
+      "status": "simple"
+    },
+    {
+      "id": "mean-arterial-pressure-24543",
+      "name": "Mean Arterial Pressure",
+      "status": "simple"
+    },
+    {
+      "id": "heart-rate-max-predicted-by-age-24544",
+      "name": "Heart Rate (Max Predicted by Age)",
+      "status": "simple"
+    },
+    {
+      "id": "daily-caloric-requirements-24545",
+      "name": "Daily Caloric Requirements",
+      "status": "moderate"
+    },
+    {
+      "id": "absolute-neutrophil-count-24546",
+      "name": "Absolute Neutrophil Count",
+      "status": "simple"
+    },
+    {
+      "id": "bsa-mosteller-53042",
+      "name": "BSA (Mosteller)",
+      "status": "simple"
+    },
+    {
+      "id": "weight-conversions-53043",
+      "name": "Weight Conversions",
+      "status": "simple"
+    },
+    {
+      "id": "creatinine-clearance-53044",
+      "name": "Creatinine Clearance",
+      "status": "moderate"
+    },
+    {
+      "id": "pregnancy-due-date-53045",
+      "name": "Pregnancy Due Date",
+      "status": "simple"
+    },
+    {
+      "id": "body-mass-index-bmi-53046",
+      "name": "Body Mass Index (BMI)",
+      "status": "simple"
+    },
+    {
+      "id": "lean-body-weight-53047",
+      "name": "Lean Body Weight",
+      "status": "moderate"
+    },
+    {
+      "id": "gfr-for-children-schwartz-53048",
+      "name": "GFR for Children (Schwartz)",
+      "status": "simple"
+    },
+    {
+      "id": "bsa-boyd-53049",
+      "name": "BSA (Boyd)",
+      "status": "simple"
+    },
+    {
+      "id": "a-a-o2-gradient-and-ratio-81301",
+      "name": "A-a O2 Gradient and Ratio",
+      "status": "moderate"
+    },
+    {
+      "id": "abbreviated-mental-test-81302",
+      "name": "Abbreviated Mental Test",
+      "status": "moderate"
+    },
+    {
+      "id": "abcd2-score-81303",
+      "name": "ABCD2 Score",
+      "status": "moderate"
+    },
+    {
+      "id": "anion-gap-serum-81305",
+      "name": "Anion Gap (Serum)",
+      "status": "moderate"
+    },
+    {
+      "id": "anion-gap-urine-81306",
+      "name": "Anion Gap (Urine)",
+      "status": "simple"
+    },
+    {
+      "id": "apgar-81307",
+      "name": "APGAR",
+      "status": "moderate"
+    },
+    {
+      "id": "basal-energy-expenditure-81308",
+      "name": "Basal Energy Expenditure",
+      "status": "moderate"
+    },
+    {
+      "id": "bicarbonate-deficit-81309",
+      "name": "Bicarbonate Deficit",
+      "status": "simple"
+    },
+    {
+      "id": "body-mass-index-81310",
+      "name": "Body Mass Index",
+      "status": "simple"
+    },
+    {
+      "id": "cap-piro-score-81311",
+      "name": "CAP PIRO Score",
+      "status": "moderate"
+    },
+    {
+      "id": "cardiac-output-echo-81312",
+      "name": "Cardiac Output (Echo)",
+      "status": "moderate"
+    },
+    {
+      "id": "cardiac-output-fick-81313",
+      "name": "Cardiac Output (Fick)",
+      "status": "moderate"
+    },
+    {
+      "id": "chads2-score-81314",
+      "name": "CHADS2 Score",
+      "status": "moderate"
+    },
+    {
+      "id": "child-pugh-classification-81315",
+      "name": "Child-Pugh Classification",
+      "status": "moderate"
+    },
+    {
+      "id": "corrected-phenytoin-albumin-81316",
+      "name": "Corrected Phenytoin (Albumin)",
+      "status": "moderate"
+    },
+    {
+      "id": "corrected-ca-albumin-81317",
+      "name": "Corrected Ca (Albumin)",
+      "status": "simple"
+    },
+    {
+      "id": "corrected-ca-protein-81318",
+      "name": "Corrected Ca (Protein)",
+      "status": "simple"
+    },
+    {
+      "id": "corrected-na-glucose-81319",
+      "name": "Corrected Na (glucose)",
+      "status": "simple"
+    },
+    {
+      "id": "corrected-na-lipids-81320",
+      "name": "Corrected Na (lipids)",
+      "status": "simple"
+    },
+    {
+      "id": "corrected-na-protein-81321",
+      "name": "Corrected Na (protein)",
+      "status": "simple"
+    },
+    {
+      "id": "clinical-pulmonary-infection-score-81322",
+      "name": "Clinical Pulmonary Infection Score",
+      "status": "moderate"
+    },
+    {
+      "id": "curb-65-score-81323",
+      "name": "CURB-65 Score",
+      "status": "moderate"
+    },
+    {
+      "id": "cvc-optimal-positioning-81324",
+      "name": "CVC Optimal Positioning",
+      "status": "moderate"
+    },
+    {
+      "id": "delta-gap-and-ratio-81325",
+      "name": "Delta Gap and Ratio",
+      "status": "moderate"
+    },
+    {
+      "id": "delta-pulse-pressure-81326",
+      "name": "Delta Pulse Pressure",
+      "status": "moderate"
+    },
+    {
+      "id": "disease-activity-scores-81327",
+      "name": "Disease Activity Scores",
+      "status": "complex"
+    },
+    {
+      "id": "endotrach-tube-size-ped-81328",
+      "name": "Endotrach. Tube Size (Ped)",
+      "status": "simple"
+    },
+    {
+      "id": "euroscore-81329",
+      "name": "EuroSCORE",
+      "status": "complex"
+    },
+    {
+      "id": "expected-pco2-winters-81330",
+      "name": "Expected PCO2 (Winters)",
+      "status": "simple"
+    },
+    {
+      "id": "four-coma-score-81331",
+      "name": "FOUR Coma Score",
+      "status": "moderate"
+    },
+    {
+      "id": "fract-excr-of-ca-feca-81332",
+      "name": "Fract Excr of Ca (FECa)",
+      "status": "moderate"
+    },
+    {
+      "id": "fract-excr-of-na-fena-81333",
+      "name": "Fract Excr of Na (FENa)",
+      "status": "moderate"
+    },
+    {
+      "id": "fract-excr-of-urea-feur-81334",
+      "name": "Fract Excr of Urea (FEUr)",
+      "status": "moderate"
+    },
+    {
+      "id": "geneva-score-for-pe-81335",
+      "name": "Geneva Score for PE",
+      "status": "moderate"
+    },
+    {
+      "id": "gfr-cockroft-gault-81336",
+      "name": "GFR (Cockroft-Gault)",
+      "status": "moderate"
+    },
+    {
+      "id": "glasgow-coma-scale-81337",
+      "name": "Glasgow Coma Scale",
+      "status": "simple"
+    },
+    {
+      "id": "glasgow-coma-scale-ped-81338",
+      "name": "Glasgow Coma Scale (Ped)",
+      "status": "simple"
+    },
+    {
+      "id": "glasgow-scoring-system-for-pancreatitis-81339",
+      "name": "Glasgow Scoring System for Pancreatitis",
+      "status": "moderate"
+    },
+    {
+      "id": "harvey-bradshaw-index-81340",
+      "name": "Harvey Bradshaw Index",
+      "status": "complex"
+    },
+    {
+      "id": "heart-rate-ekg-81341",
+      "name": "Heart Rate (EKG)",
+      "status": "simple"
+    },
+    {
+      "id": "hepatitis-discriminant-factor-81342",
+      "name": "Hepatitis Discriminant Factor",
+      "status": "simple"
+    },
+    {
+      "id": "in-flight-pao2-estimation-81344",
+      "name": "In-Flight PaO2 Estimation",
+      "status": "simple"
+    },
+    {
+      "id": "infusion-iv-drip-rate-81345",
+      "name": "Infusion: IV Drip Rate",
+      "status": "simple"
+    },
+    {
+      "id": "injury-severity-score-81346",
+      "name": "Injury Severity Score",
+      "status": "complex"
+    },
+    {
+      "id": "iron-deficit-81347",
+      "name": "Iron Deficit",
+      "status": "moderate"
+    },
+    {
+      "id": "ldl-cholesterol-81348",
+      "name": "LDL Cholesterol",
+      "status": "moderate"
+    },
+    {
+      "id": "likelihood-ratios-81349",
+      "name": "Likelihood Ratios",
+      "status": "simple"
+    },
+    {
+      "id": "liver-volume-vauthey-81350",
+      "name": "Liver Volume (Vauthey)",
+      "status": "moderate"
+    },
+    {
+      "id": "lung-age-81351",
+      "name": "Lung Age",
+      "status": "moderate"
+    },
+    {
+      "id": "maintenance-fluid-children-81352",
+      "name": "Maintenance Fluid (children)",
+      "status": "moderate"
+    },
+    {
+      "id": "microalbuminuria-81354",
+      "name": "Microalbuminuria",
+      "status": "simple"
+    },
+    {
+      "id": "molarity-81355",
+      "name": "Molarity",
+      "status": "simple"
+    },
+    {
+      "id": "nac-dosage-regimen-81356",
+      "name": "NAC Dosage Regimen",
+      "status": "simple"
+    },
+    {
+      "id": "osmolal-gap-serum-81359",
+      "name": "Osmolal Gap (Serum)",
+      "status": "moderate"
+    },
+    {
+      "id": "osmolal-gap-stool-81360",
+      "name": "Osmolal Gap (Stool)",
+      "status": "simple"
+    },
+    {
+      "id": "oxygen-index-81361",
+      "name": "Oxygen Index",
+      "status": "simple"
+    },
+    {
+      "id": "o2-tank-remaining-time-81362",
+      "name": "O2 Tank Remaining Time",
+      "status": "simple"
+    },
+    {
+      "id": "pao2-fio2-ratio-81363",
+      "name": "PaO2 / FiO2 Ratio",
+      "status": "simple"
+    },
+    {
+      "id": "pediatric-trauma-score-81364",
+      "name": "Pediatric Trauma Score",
+      "status": "moderate"
+    },
+    {
+      "id": "plasma-volume-81365",
+      "name": "Plasma Volume",
+      "status": "simple"
+    },
+    {
+      "id": "pneumonia-severity-index-81366",
+      "name": "Pneumonia Severity Index",
+      "status": "complex"
+    },
+    {
+      "id": "post-test-prob-sn-sp-81367",
+      "name": "Post-test Prob. (Sn/Sp)",
+      "status": "moderate"
+    },
+    {
+      "id": "pressure-gradient-81368",
+      "name": "Pressure Gradient",
+      "status": "simple"
+    },
+    {
+      "id": "protein-excretion-81369",
+      "name": "Protein Excretion",
+      "status": "simple"
+    },
+    {
+      "id": "q-tc-81370",
+      "name": "Q-Tc",
+      "status": "simple"
+    },
+    {
+      "id": "ranson-s-score-81371",
+      "name": "Ranson's Score",
+      "status": "moderate"
+    },
+    {
+      "id": "red-blood-cell-indices-81372",
+      "name": "Red Blood Cell Indices",
+      "status": "moderate"
+    },
+    {
+      "id": "reticulocyte-index-81373",
+      "name": "Reticulocyte Index",
+      "status": "moderate"
+    },
+    {
+      "id": "revised-trauma-score-81374",
+      "name": "Revised Trauma Score",
+      "status": "simple"
+    },
+    {
+      "id": "serum-ascites-albumin-gradient-81375",
+      "name": "Serum Ascites Albumin Gradient",
+      "status": "simple"
+    },
+    {
+      "id": "san-francisco-syncope-rule-81376",
+      "name": "San Francisco Syncope Rule",
+      "status": "moderate"
+    },
+    {
+      "id": "sequential-organ-failure-assessment-sofa-score-81377",
+      "name": "Sequential Organ Failure Assessment (SOFA) Score",
+      "status": "moderate"
+    },
+    {
+      "id": "spirometric-values-81378",
+      "name": "Spirometric Values",
+      "status": "moderate"
+    },
+    {
+      "id": "target-height-81379",
+      "name": "Target Height",
+      "status": "moderate"
+    },
+    {
+      "id": "timi-score-nstemi-81380",
+      "name": "TIMI Score (NSTEMI)",
+      "status": "complex"
+    },
+    {
+      "id": "timi-score-stemi-81381",
+      "name": "TIMI Score (STEMI)",
+      "status": "complex"
+    },
+    {
+      "id": "transtubular-k-gradient-81382",
+      "name": "Transtubular K Gradient",
+      "status": "moderate"
+    },
+    {
+      "id": "tubular-po4-reabsorption-81383",
+      "name": "Tubular PO4 Reabsorption",
+      "status": "moderate"
+    },
+    {
+      "id": "urine-output-81384",
+      "name": "Urine Output",
+      "status": "simple"
+    },
+    {
+      "id": "vap-piro-score-81385",
+      "name": "VAP PIRO Score",
+      "status": "moderate"
+    },
+    {
+      "id": "water-deficit-81386",
+      "name": "Water Deficit",
+      "status": "moderate"
+    },
+    {
+      "id": "wells-score-for-dvt-81387",
+      "name": "Wells Score for DVT",
+      "status": "moderate"
+    },
+    {
+      "id": "wells-score-for-pe-81388",
+      "name": "Wells Score for PE",
+      "status": "moderate"
+    },
+    {
+      "id": "wfns-sah-grade-81389",
+      "name": "WFNS SAH Grade",
+      "status": "moderate"
+    },
+    {
+      "id": "digoxin-dosing-83937",
+      "name": "Digoxin Dosing",
+      "status": "complex"
+    },
+    {
+      "id": "das28-esr-83938",
+      "name": "DAS28 (ESR)",
+      "status": "moderate"
+    },
+    {
+      "id": "das28-crp-4-83939",
+      "name": "DAS28 (CRP-4)",
+      "status": "moderate"
+    },
+    {
+      "id": "aminoglycoside-dosing-hull-sarubbi-nomogram-83940",
+      "name": "Aminoglycoside Dosing - Hull Sarubbi Nomogram",
+      "status": "complex"
+    },
+    {
+      "id": "aminoglycosides-dosing-83941",
+      "name": "Aminoglycosides Dosing",
+      "status": "complex"
+    },
+    {
+      "id": "vancomycin-dosing-83942",
+      "name": "Vancomycin Dosing",
+      "status": "complex"
+    },
+    {
+      "id": "theophylline-dosing-83943",
+      "name": "Theophylline Dosing",
+      "status": "complex"
+    },
+    {
+      "id": "carbamazepine-dosing-83944",
+      "name": "Carbamazepine Dosing",
+      "status": "complex"
+    }
+  ]
+}

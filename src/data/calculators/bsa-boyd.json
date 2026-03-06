@@ -1,0 +1,52 @@
+{
+  "id": "bsa-boyd",
+  "name": "BSA (Boyd)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "cm",
+      "units": [
+        {
+          "label": "cm",
+          "factor": 1
+        },
+        {
+          "label": "inches",
+          "factor": 2.54
+        },
+        {
+          "label": "feet",
+          "factor": 30.48
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "g",
+      "units": [
+        {
+          "label": "g",
+          "factor": 1
+        },
+        {
+          "label": "kg",
+          "factor": 1000
+        },
+        {
+          "label": "lbs",
+          "factor": 453.59
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.076Z",
+  "updatedAt": "2026-03-06T13:16:04.076Z"
+}

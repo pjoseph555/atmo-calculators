@@ -1,0 +1,27 @@
+{
+  "id": "molarity",
+  "name": "Molarity",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "molecular_weight",
+      "label": "Molecular Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "volume",
+      "label": "Volume"
+    },
+    {
+      "type": "numeric",
+      "id": "mass",
+      "label": "Mass"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.326Z",
+  "updatedAt": "2026-03-06T13:16:04.326Z"
+}

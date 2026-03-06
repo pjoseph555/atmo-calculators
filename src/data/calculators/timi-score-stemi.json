@@ -1,0 +1,141 @@
+{
+  "id": "timi-score-stemi",
+  "name": "TIMI Score (STEMI)",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "age",
+      "label": "Age",
+      "options": [
+        {
+          "label": "65-74",
+          "value": 2
+        },
+        {
+          "label": ">= 75",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "dm_or_htn_or_angina",
+      "label": "DM or HTN or Angina",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sbp_100_mmhg",
+      "label": "SBP < 100 mmHg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "hr_100_bpm",
+      "label": "HR > 100 bpm",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "killip_class_ii_iv",
+      "label": "Killip Class II-IV",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "weight_67_kg",
+      "label": "Weight < 67 kg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "anterior_ste_or_lbbb",
+      "label": "Anterior STE or LBBB",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "time_to_treatment_4_hrs",
+      "label": "Time to Treatment > 4 hrs",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "timi_score",
+      "label": "TIMI Score",
+      "formula": "age + dm_or_htn_or_angina + sbp_100_mmhg + hr_100_bpm + killip_class_ii_iv + weight_67_kg + anterior_ste_or_lbbb + time_to_treatment_4_hrs",
+      "precision": 2,
+      "defaultUnit": "pts"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.439Z",
+  "updatedAt": "2026-03-06T13:16:04.439Z"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pressure-gradient",
+  "name": "Pressure Gradient",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "proximal_velocity",
+      "label": "Proximal velocity"
+    },
+    {
+      "type": "numeric",
+      "id": "distal_velocity",
+      "label": "Distal velocity"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.379Z",
+  "updatedAt": "2026-03-06T13:16:04.379Z"
+}

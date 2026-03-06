@@ -1,0 +1,36 @@
+{
+  "id": "ldl-cholesterol-linked-only-to-old-tools-24540",
+  "name": "LDL Cholesterol LINKED ONLY TO OLD TOOLS",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "total_cholesterol",
+      "label": "Total Cholesterol"
+    },
+    {
+      "type": "numeric",
+      "id": "hdl_cholesterol",
+      "label": "HDL Cholesterol"
+    },
+    {
+      "type": "numeric",
+      "id": "triglycerides",
+      "label": "Triglycerides"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "ldl_cholesterol",
+      "label": "LDL Cholesterol",
+      "formula": "total_cholesterol - hdl_cholesterol - triglycerides / 5",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.052Z",
+  "updatedAt": "2026-03-06T13:17:08.052Z"
+}

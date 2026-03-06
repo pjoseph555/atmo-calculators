@@ -1,0 +1,60 @@
+{
+  "id": "gfr-for-children-schwartz",
+  "name": "GFR for Children (Schwartz)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "age_group",
+      "label": "Age Group",
+      "options": [
+        {
+          "label": "Pre-term babies",
+          "value": 0.33
+        },
+        {
+          "label": "Full-term infants",
+          "value": 0.45
+        },
+        {
+          "label": "Children ages 1-12 years",
+          "value": 0.55
+        },
+        {
+          "label": "Girls, ages 13-21 years",
+          "value": 0.55
+        },
+        {
+          "label": "Boys, ages 13-21 years",
+          "value": 0.7
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "cm",
+      "units": [
+        {
+          "label": "cm",
+          "factor": 1
+        },
+        {
+          "label": "inches",
+          "factor": 2.54
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.070Z",
+  "updatedAt": "2026-03-06T13:16:04.070Z"
+}

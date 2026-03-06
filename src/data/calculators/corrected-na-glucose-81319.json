@@ -1,0 +1,31 @@
+{
+  "id": "corrected-na-glucose-81319",
+  "name": "Corrected Na (glucose)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "na",
+      "label": "Na"
+    },
+    {
+      "type": "numeric",
+      "id": "glucose",
+      "label": "Glucose"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_na",
+      "label": "Corrected Na",
+      "formula": "na + (glucose - 5) / 3.5",
+      "precision": 2,
+      "defaultUnit": "mmol/L"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.203Z",
+  "updatedAt": "2026-03-06T13:17:08.203Z"
+}

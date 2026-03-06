@@ -1,0 +1,46 @@
+{
+  "id": "liver-volume-vauthey-81350",
+  "name": "Liver Volume (Vauthey)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "height_enter_0_for_tlv_from_weight_only",
+      "label": "Height (enter 0 for TLV from weight only)",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.01
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "total_liver_volume",
+      "label": "Total Liver Volume",
+      "formula": "IF(height_enter_0_for_tlv_from_weight_only == 0, 191.80 + 18.51 * weight, 1267.28 * (weight * height_enter_0_for_tlv_from_weight_only * 0.02777777777) ^ 0.5 - 794.41)",
+      "precision": 2,
+      "defaultUnit": "cm^3"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.343Z",
+  "updatedAt": "2026-03-06T13:17:08.343Z"
+}

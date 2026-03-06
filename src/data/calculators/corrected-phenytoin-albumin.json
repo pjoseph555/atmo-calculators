@@ -1,0 +1,37 @@
+{
+  "id": "corrected-phenytoin-albumin",
+  "name": "Corrected Phenytoin (Albumin)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "patient_s_calculated_creatinine_clearanc",
+      "label": "Patient's calculated Creatinine Clearance < 20?",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "phenytoin_level",
+      "label": "Phenytoin Level"
+    },
+    {
+      "type": "numeric",
+      "id": "albumin",
+      "label": "Albumin"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.153Z",
+  "updatedAt": "2026-03-06T13:16:04.153Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "infusion-iv-drip-rate-81345",
+  "name": "Infusion: IV Drip Rate",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "amount_to_infuse",
+      "label": "Amount to infuse"
+    },
+    {
+      "type": "numeric",
+      "id": "desired_duration",
+      "label": "Desired Duration"
+    },
+    {
+      "type": "numeric",
+      "id": "drop_factor_set",
+      "label": "Drop Factor (set)"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "drip_rate",
+      "label": "Drip rate",
+      "formula": "drop_factor_set * amount_to_infuse / desired_duration",
+      "precision": 2,
+      "defaultUnit": "gtt/min"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.321Z",
+  "updatedAt": "2026-03-06T13:17:08.321Z"
+}

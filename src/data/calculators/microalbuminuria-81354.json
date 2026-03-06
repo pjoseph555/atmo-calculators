@@ -1,0 +1,30 @@
+{
+  "id": "microalbuminuria-81354",
+  "name": "Microalbuminuria",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "u_albumin",
+      "label": "U Albumin"
+    },
+    {
+      "type": "numeric",
+      "id": "u_creatinine",
+      "label": "U Creatinine"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "alb_cr_ratio",
+      "label": "Alb / Cr ratio",
+      "formula": "u_albumin / u_creatinine",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.356Z",
+  "updatedAt": "2026-03-06T13:17:08.356Z"
+}

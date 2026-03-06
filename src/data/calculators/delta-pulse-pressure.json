@@ -1,0 +1,32 @@
+{
+  "id": "delta-pulse-pressure",
+  "name": "Delta Pulse Pressure",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "maximum_systolic_bp",
+      "label": "Maximum Systolic BP"
+    },
+    {
+      "type": "numeric",
+      "id": "minimum_systolic_bp",
+      "label": "Minimum Systolic BP"
+    },
+    {
+      "type": "numeric",
+      "id": "maximum_diastolic_bp",
+      "label": "Maximum Diastolic BP"
+    },
+    {
+      "type": "numeric",
+      "id": "minimum_diatolic_bp",
+      "label": "Minimum Diatolic BP"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.200Z",
+  "updatedAt": "2026-03-06T13:16:04.200Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "post-test-prob-sn-sp",
+  "name": "Post-test Prob. (Sn/Sp)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "pre_test_probability",
+      "label": "Pre-test probability"
+    },
+    {
+      "type": "numeric",
+      "id": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "type": "numeric",
+      "id": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "type": "dropdown",
+      "id": "test_result",
+      "label": "Test result",
+      "options": [
+        {
+          "label": "Positive",
+          "value": 1
+        },
+        {
+          "label": "Negative",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.374Z",
+  "updatedAt": "2026-03-06T13:16:04.374Z"
+}

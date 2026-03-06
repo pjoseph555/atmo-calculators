@@ -1,0 +1,140 @@
+{
+  "id": "geneva-score-for-pe-81335",
+  "name": "Geneva Score for PE",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "age_65_yrs",
+      "label": "Age > 65 yrs",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "previous_dvt_or_pe",
+      "label": "Previous DVT or PE",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "surgery_within_1_month",
+      "label": "Surgery within 1 month",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "active_malignancy",
+      "label": "Active malignancy",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "unilateral_lower_limb_pain",
+      "label": "Unilateral lower limb pain",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "hemoptysis",
+      "label": "Hemoptysis",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pain_on_lower_limb_deep_venous_palpation",
+      "label": "Pain on lower limb deep venous palpation and unilateral edema",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "heart_rate",
+      "label": "Heart Rate",
+      "options": [
+        {
+          "label": "75-94",
+          "value": 3
+        },
+        {
+          "label": ">=95",
+          "value": 5
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "age_65_yrs + previous_dvt_or_pe + surgery_within_1_month + active_malignancy + unilateral_lower_limb_pain + hemoptysis + pain_on_lower_limb_deep_venous_palpation + heart_rate",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.279Z",
+  "updatedAt": "2026-03-06T13:17:08.279Z"
+}

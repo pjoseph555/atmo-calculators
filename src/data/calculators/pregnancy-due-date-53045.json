@@ -1,0 +1,31 @@
+{
+  "id": "pregnancy-due-date-53045",
+  "name": "Pregnancy Due Date",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "date",
+      "id": "last_menstrual_period",
+      "label": "Last menstrual period"
+    },
+    {
+      "type": "date",
+      "id": "today_s_date",
+      "label": "Today's date"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "number_of_weeks_pregnant",
+      "label": "Number of weeks pregnant",
+      "formula": "(today_s_date - last_menstrual_period) / 604800",
+      "precision": 2,
+      "defaultUnit": "weeks"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.098Z",
+  "updatedAt": "2026-03-06T13:17:08.098Z"
+}

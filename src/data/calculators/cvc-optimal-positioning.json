@@ -1,0 +1,54 @@
+{
+  "id": "cvc-optimal-positioning",
+  "name": "CVC Optimal Positioning",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "patient_s_height",
+      "label": "Patient's Height",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.01
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "right_subclavian",
+      "label": "Right Subclavian",
+      "formula": "patient_s_height * 100 / 10 - 2",
+      "precision": 2
+    },
+    {
+      "type": "numeric",
+      "id": "left_subclavian",
+      "label": "Left Subclavian",
+      "formula": "patient_s_height * 100 / 10 + 2",
+      "precision": 2
+    },
+    {
+      "type": "numeric",
+      "id": "right_int_jugular",
+      "label": "Right Int. Jugular",
+      "formula": "patient_s_height * 100 / 10",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.191Z",
+  "updatedAt": "2026-03-06T13:16:04.191Z"
+}

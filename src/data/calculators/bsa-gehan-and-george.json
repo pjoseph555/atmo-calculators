@@ -1,0 +1,48 @@
+{
+  "id": "bsa-gehan-and-george",
+  "name": "BSA (Gehan and George)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "cm",
+      "units": [
+        {
+          "label": "cm",
+          "factor": 1
+        },
+        {
+          "label": "inches",
+          "factor": 2.54
+        },
+        {
+          "label": "feet",
+          "factor": 30.48
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lbs",
+          "factor": 0.454
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.946Z",
+  "updatedAt": "2026-03-06T13:16:03.946Z"
+}

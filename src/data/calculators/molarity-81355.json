@@ -1,0 +1,36 @@
+{
+  "id": "molarity-81355",
+  "name": "Molarity",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "molecular_weight",
+      "label": "Molecular Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "volume",
+      "label": "Volume"
+    },
+    {
+      "type": "numeric",
+      "id": "mass",
+      "label": "Mass"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "molarity",
+      "label": "Molarity",
+      "formula": "mass / (molecular_weight * volume)",
+      "precision": 2,
+      "defaultUnit": "M"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.361Z",
+  "updatedAt": "2026-03-06T13:17:08.361Z"
+}

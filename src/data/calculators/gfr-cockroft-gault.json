@@ -1,0 +1,42 @@
+{
+  "id": "gfr-cockroft-gault",
+  "name": "GFR (Cockroft-Gault)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.248Z",
+  "updatedAt": "2026-03-06T13:16:04.248Z"
+}

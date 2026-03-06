@@ -1,0 +1,27 @@
+{
+  "id": "osmolal-gap-stool",
+  "name": "Osmolal Gap (Stool)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "stool_na",
+      "label": "Stool Na"
+    },
+    {
+      "type": "numeric",
+      "id": "stool_k",
+      "label": "Stool K"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_osmolality",
+      "label": "Serum Osmolality"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.341Z",
+  "updatedAt": "2026-03-06T13:16:04.341Z"
+}

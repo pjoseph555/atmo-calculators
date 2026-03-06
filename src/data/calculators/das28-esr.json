@@ -1,0 +1,32 @@
+{
+  "id": "das28-esr",
+  "name": "DAS28 (ESR)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "number_of_tender_joints",
+      "label": "Number of Tender Joints"
+    },
+    {
+      "type": "numeric",
+      "id": "number_of_swollen_joints",
+      "label": "Number of Swollen Joints"
+    },
+    {
+      "type": "numeric",
+      "id": "general_health",
+      "label": "General Health"
+    },
+    {
+      "type": "numeric",
+      "id": "erythrocyte_sedimentation_rate",
+      "label": "Erythrocyte Sedimentation Rate"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.486Z",
+  "updatedAt": "2026-03-06T13:16:04.486Z"
+}

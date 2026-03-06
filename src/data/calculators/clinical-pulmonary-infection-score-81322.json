@@ -1,0 +1,133 @@
+{
+  "id": "clinical-pulmonary-infection-score-81322",
+  "name": "Clinical Pulmonary Infection Score",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "tracheal_secr",
+      "label": "Tracheal Secr.",
+      "options": [
+        {
+          "label": "Rare",
+          "value": 0
+        },
+        {
+          "label": "Abundant",
+          "value": 1
+        },
+        {
+          "label": "Abundant + purulent",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "chest_x_ray",
+      "label": "Chest X-ray",
+      "options": [
+        {
+          "label": "None",
+          "value": 0
+        },
+        {
+          "label": "Diffuse",
+          "value": 1
+        },
+        {
+          "label": "Localized",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "temperature",
+      "label": "Temperature",
+      "options": [
+        {
+          "label": "36.5 - 38.4 C",
+          "value": 0
+        },
+        {
+          "label": "38.5 - 38.9 C",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "white_cell_count",
+      "label": "White Cell Count",
+      "options": [
+        {
+          "label": "4 - 11 G/L",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f5",
+      "label": "f5",
+      "options": [
+        {
+          "label": ">240 or ARDS",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "progression",
+      "label": "Progression",
+      "options": [
+        {
+          "label": "No radiographic progression",
+          "value": 0
+        },
+        {
+          "label": "Radiographic progression (CHF and ARDS excluded)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "culture",
+      "label": "Culture",
+      "options": [
+        {
+          "label": "Pathogenic bacteria cultured in rare or light quantity or no growth",
+          "value": 0
+        },
+        {
+          "label": "Same pathogenic bacteria seen on Gram stain (rare/light quantity)",
+          "value": 1
+        },
+        {
+          "label": "Pathogenic bacteria cultured in moderate or heavy quantity",
+          "value": 1
+        },
+        {
+          "label": "Same pathogenic bacteria seen on Gram stain (moderate/heavy quantity)",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "tracheal_secr + chest_x_ray + temperature + white_cell_count + f5 + progression + culture",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.216Z",
+  "updatedAt": "2026-03-06T13:17:08.216Z"
+}

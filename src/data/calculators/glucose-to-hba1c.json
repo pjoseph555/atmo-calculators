@@ -1,0 +1,17 @@
+{
+  "id": "glucose-to-hba1c",
+  "name": "Glucose to HbA1C",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "mean_plasma_glucose",
+      "label": "Mean Plasma Glucose"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.984Z",
+  "updatedAt": "2026-03-06T13:16:03.984Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ldl-cholesterol-linked-only-to-old-tools",
+  "name": "LDL Cholesterol LINKED ONLY TO OLD TOOLS",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "total_cholesterol",
+      "label": "Total Cholesterol"
+    },
+    {
+      "type": "numeric",
+      "id": "hdl_cholesterol",
+      "label": "HDL Cholesterol"
+    },
+    {
+      "type": "numeric",
+      "id": "triglycerides",
+      "label": "Triglycerides"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.995Z",
+  "updatedAt": "2026-03-06T13:16:03.995Z"
+}

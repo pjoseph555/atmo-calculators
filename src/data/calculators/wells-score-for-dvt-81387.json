@@ -1,0 +1,170 @@
+{
+  "id": "wells-score-for-dvt-81387",
+  "name": "Wells Score for DVT",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "bedridden_recently_3_days_or_major_surge",
+      "label": "Bedridden recently (>3 days) or major surgery within 12 weeks",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "paralysis_paresis_or_recent_immobilizati",
+      "label": "Paralysis, paresis or recent immobilization of lower extremities",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "calf_swelling_3cm_compared_to_asymptomat",
+      "label": "Calf swelling >3cm compared to asymptomatic leg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pitting_edema_confined_to_the_symptomati",
+      "label": "Pitting edema confined to the symptomatic leg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "entire_leg_swollen",
+      "label": "Entire leg swollen",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "collateral_nonvaricose_superficial_veins",
+      "label": "Collateral (nonvaricose) superficial veins present",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "localized_tenderness_along_the_deep_veno",
+      "label": "Localized tenderness along the deep venous system",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "previously_documented_dvt",
+      "label": "Previously documented DVT",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "alternative_diagnosis_to_dvt_as_likely_o",
+      "label": "Alternative diagnosis to DVT as likely or more likely",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": -2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "active_cancer",
+      "label": "Active cancer",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "bedridden_recently_3_days_or_major_surge + paralysis_paresis_or_recent_immobilizati + calf_swelling_3cm_compared_to_asymptomat + pitting_edema_confined_to_the_symptomati + entire_leg_swollen + collateral_nonvaricose_superficial_veins + localized_tenderness_along_the_deep_veno + previously_documented_dvt + alternative_diagnosis_to_dvt_as_likely_o + active_cancer",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.499Z",
+  "updatedAt": "2026-03-06T13:17:08.499Z"
+}

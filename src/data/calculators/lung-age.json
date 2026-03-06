@@ -1,0 +1,48 @@
+{
+  "id": "lung-age",
+  "name": "Lung Age",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "measured_fev1",
+      "label": "Measured FEV1"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.312Z",
+  "updatedAt": "2026-03-06T13:16:04.312Z"
+}

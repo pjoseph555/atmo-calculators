@@ -1,0 +1,22 @@
+{
+  "id": "mean-arterial-pressure",
+  "name": "Mean Arterial Pressure",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "systolic_bp",
+      "label": "Systolic BP"
+    },
+    {
+      "type": "numeric",
+      "id": "diastolic_bp",
+      "label": "Diastolic BP"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.010Z",
+  "updatedAt": "2026-03-06T13:16:04.010Z"
+}

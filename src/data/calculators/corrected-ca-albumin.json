@@ -1,0 +1,22 @@
+{
+  "id": "corrected-ca-albumin",
+  "name": "Corrected Ca (Albumin)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "serum_ca",
+      "label": "Serum Ca"
+    },
+    {
+      "type": "numeric",
+      "id": "patient_albumin",
+      "label": "Patient albumin"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.158Z",
+  "updatedAt": "2026-03-06T13:16:04.158Z"
+}

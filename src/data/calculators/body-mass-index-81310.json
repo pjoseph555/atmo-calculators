@@ -1,0 +1,61 @@
+{
+  "id": "body-mass-index-81310",
+  "name": "Body Mass Index",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.01
+        },
+        {
+          "label": "ft",
+          "factor": 0.304
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lb",
+          "factor": 0.454
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "bmi",
+      "label": "BMI",
+      "formula": "weight / (height * height)",
+      "precision": 2,
+      "defaultUnit": "kg/m^2"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.159Z",
+  "updatedAt": "2026-03-06T13:17:08.159Z"
+}

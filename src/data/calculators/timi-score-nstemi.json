@@ -1,0 +1,126 @@
+{
+  "id": "timi-score-nstemi",
+  "name": "TIMI Score (NSTEMI)",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "age_65_yrs",
+      "label": "Age >= 65 yrs",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "v3_cad_risk_factors",
+      "label": ">= 3 CAD risk factors",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "known_cad_50_stenosis",
+      "label": "Known CAD (>= 50% stenosis)",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "aspirin_use_in_the_past_7_days",
+      "label": "Aspirin use in the past 7 days",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "severe_angina_in_last_24_hrs",
+      "label": "Severe angina in last 24 hrs",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "elevated_cardiac_markers",
+      "label": "Elevated cardiac markers",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "stdeviation_0_5_mm",
+      "label": "STdeviation >= 0.5 mm",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "timi_score",
+      "label": "TIMI Score",
+      "formula": "age_65_yrs + v3_cad_risk_factors + known_cad_50_stenosis + aspirin_use_in_the_past_7_days + severe_angina_in_last_24_hrs + elevated_cardiac_markers + stdeviation_0_5_mm",
+      "precision": 2,
+      "defaultUnit": "pts"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.434Z",
+  "updatedAt": "2026-03-06T13:16:04.434Z"
+}

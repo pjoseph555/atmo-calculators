@@ -1,0 +1,27 @@
+{
+  "id": "protein-excretion",
+  "name": "Protein Excretion",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "urine_protein",
+      "label": "Urine Protein"
+    },
+    {
+      "type": "numeric",
+      "id": "urine_creatinine",
+      "label": "Urine Creatinine"
+    },
+    {
+      "type": "numeric",
+      "id": "body_surface_area",
+      "label": "Body Surface Area"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.383Z",
+  "updatedAt": "2026-03-06T13:16:04.383Z"
+}

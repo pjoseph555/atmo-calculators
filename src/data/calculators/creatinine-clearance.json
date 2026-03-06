@@ -1,0 +1,83 @@
+{
+  "id": "creatinine-clearance",
+  "name": "Creatinine Clearance",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lb",
+          "factor": 0.45359
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 0.85
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "estimated_creatinine_clearance",
+      "label": "Estimated Creatinine Clearance",
+      "formula": "(140 - age) * weight * sex / (72 * serum_creatinine)",
+      "precision": 2,
+      "defaultUnit": "mL/min"
+    }
+  ],
+  "report": {
+    "formula": "IF(estimated_creatinine_clearance > 85, 0, IF(estimated_creatinine_clearance >= 60, 1, IF(estimated_creatinine_clearance >= 30, 2, 3)))",
+    "variants": [
+      {
+        "id": "0",
+        "template": "Estimated Creatinine Clearance: {estimated_creatinine_clearance}<br />Within normal range."
+      },
+      {
+        "id": "1",
+        "template": "Estimated Creatinine Clearance: {estimated_creatinine_clearance}<br />Mild renal impairment."
+      },
+      {
+        "id": "2",
+        "template": "Estimated Creatinine Clearance: {estimated_creatinine_clearance}<br />Moderate renal impairment."
+      },
+      {
+        "id": "3",
+        "template": "Estimated Creatinine Clearance: {estimated_creatinine_clearance}<br />Severe renal impairment."
+      }
+    ]
+  },
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.041Z",
+  "updatedAt": "2026-03-06T13:16:04.041Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "reticulocyte-index-81373",
+  "name": "Reticulocyte Index",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "reticulocytes",
+      "label": "Reticulocytes"
+    },
+    {
+      "type": "numeric",
+      "id": "hematocrit",
+      "label": "Hematocrit"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "index",
+      "label": "Index",
+      "formula": "IF(hematocrit < 20 AND hematocrit >= 5, reticulocytes * (hematocrit / 45) / 2.5, IF(hematocrit >= 20 AND hematocrit < 40, reticulocytes * (hematocrit / 45) / 2, IF(hematocrit >= 30 AND hematocrit < 41, reticulocytes * (hematocrit / 45) / 1.5, IF(hematocrit >= 41 AND hematocrit <= 90, reticulocytes * (hematocrit / 45) / 1, 0))))",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.434Z",
+  "updatedAt": "2026-03-06T13:17:08.434Z"
+}

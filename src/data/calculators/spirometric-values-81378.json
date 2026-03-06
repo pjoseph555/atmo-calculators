@@ -1,0 +1,84 @@
+{
+  "id": "spirometric-values-81378",
+  "name": "Spirometric Values",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height",
+      "defaultUnit": "m",
+      "units": [
+        {
+          "label": "m",
+          "factor": 1
+        },
+        {
+          "label": "cm",
+          "factor": 0.01
+        },
+        {
+          "label": "in",
+          "factor": 0.0254
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "method",
+      "label": "Method",
+      "options": [
+        {
+          "label": "Crapo (USA)",
+          "value": 2
+        },
+        {
+          "label": "ERS (Europe)",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "predicted_fvc",
+      "label": "Predicted FVC",
+      "formula": "IF(gender == 1 AND method == 1, 0.0576 * height * 100 - 0.026 * age - 4.34, IF(gender == 2 AND method == 1, 0.0443 * height * 100 - 0.026 * age - 2.89, IF(gender == 1 AND method == 2, 0.06 * height * 100 - 0.0214 * age - 4.65, IF(gender == 2 AND method == 2, 0.0491 * height * 100 - 0.0216 * age - 3.59, 99999))))",
+      "precision": 2,
+      "defaultUnit": "L"
+    },
+    {
+      "type": "numeric",
+      "id": "predicted_fev1",
+      "label": "Predicted FEV1",
+      "formula": "IF(gender == 1 AND method == 1, 0.043 * height * 100 - 0.029 * age - 2.49, IF(gender == 2 AND method == 1, 0.0395 * height * 100 - 0.025 * age - 2.6, IF(gender == 1 AND method == 2, 0.0414 * height * 100 - 0.0244 * age - 2.19, IF(gender == 2 AND method == 2, 0.0342 * height * 100 - 0.0255 * age - 1.578, 99999))))",
+      "precision": 2,
+      "defaultUnit": "L"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.458Z",
+  "updatedAt": "2026-03-06T13:17:08.458Z"
+}

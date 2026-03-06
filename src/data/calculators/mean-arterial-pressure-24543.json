@@ -1,0 +1,31 @@
+{
+  "id": "mean-arterial-pressure-24543",
+  "name": "Mean Arterial Pressure",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "systolic_bp",
+      "label": "Systolic BP"
+    },
+    {
+      "type": "numeric",
+      "id": "diastolic_bp",
+      "label": "Diastolic BP"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "mean_arterial_pressure",
+      "label": "Mean Arterial Pressure",
+      "formula": "diastolic_bp + (systolic_bp - diastolic_bp) / 3",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.065Z",
+  "updatedAt": "2026-03-06T13:17:08.065Z"
+}

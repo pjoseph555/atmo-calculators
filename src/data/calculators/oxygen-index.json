@@ -1,0 +1,27 @@
+{
+  "id": "oxygen-index",
+  "name": "Oxygen Index",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    },
+    {
+      "type": "numeric",
+      "id": "mean_airway_pressure",
+      "label": "Mean Airway Pressure"
+    },
+    {
+      "type": "numeric",
+      "id": "f3",
+      "label": "f3"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.346Z",
+  "updatedAt": "2026-03-06T13:16:04.346Z"
+}

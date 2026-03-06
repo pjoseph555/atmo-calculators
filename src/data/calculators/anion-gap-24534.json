@@ -1,0 +1,36 @@
+{
+  "id": "anion-gap-24534",
+  "name": "Anion Gap",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "serum_sodium_level",
+      "label": "Serum sodium level"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_chloride_level",
+      "label": "Serum chloride level"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_bicarbonate_level",
+      "label": "Serum bicarbonate level"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "anion_gap",
+      "label": "Anion gap",
+      "formula": "serum_sodium_level - (serum_chloride_level + serum_bicarbonate_level)",
+      "precision": 2,
+      "defaultUnit": "mEq/L"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.024Z",
+  "updatedAt": "2026-03-06T13:17:08.024Z"
+}

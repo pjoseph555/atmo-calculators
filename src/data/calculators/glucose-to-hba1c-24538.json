@@ -1,0 +1,26 @@
+{
+  "id": "glucose-to-hba1c-24538",
+  "name": "Glucose to HbA1C",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "mean_plasma_glucose",
+      "label": "Mean Plasma Glucose"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "hba1c",
+      "label": "HbA1C",
+      "formula": "(mean_plasma_glucose + 77.3) / 35.6",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.043Z",
+  "updatedAt": "2026-03-06T13:17:08.043Z"
+}

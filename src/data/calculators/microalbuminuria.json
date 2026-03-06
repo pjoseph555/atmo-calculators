@@ -1,0 +1,22 @@
+{
+  "id": "microalbuminuria",
+  "name": "Microalbuminuria",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "u_albumin",
+      "label": "U Albumin"
+    },
+    {
+      "type": "numeric",
+      "id": "u_creatinine",
+      "label": "U Creatinine"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.322Z",
+  "updatedAt": "2026-03-06T13:16:04.322Z"
+}

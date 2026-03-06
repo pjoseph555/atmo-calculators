@@ -1,0 +1,44 @@
+{
+  "id": "serum-ascites-albumin-gradient",
+  "name": "Serum Ascites Albumin Gradient",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "serum_albumin",
+      "label": "Serum Albumin",
+      "defaultUnit": "g/dL",
+      "units": [
+        {
+          "label": "g/dL",
+          "factor": 1
+        },
+        {
+          "label": "g/L",
+          "factor": 0.1
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "ascites_albumin",
+      "label": "Ascites Albumin",
+      "defaultUnit": "g/dL",
+      "units": [
+        {
+          "label": "g/dL",
+          "factor": 1
+        },
+        {
+          "label": "g/L",
+          "factor": 0.1
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.412Z",
+  "updatedAt": "2026-03-06T13:16:04.412Z"
+}

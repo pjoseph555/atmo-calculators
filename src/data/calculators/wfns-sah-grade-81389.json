@@ -1,0 +1,40 @@
+{
+  "id": "wfns-sah-grade-81389",
+  "name": "WFNS SAH Grade",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "glasgow_coma_scale",
+      "label": "Glasgow Coma Scale"
+    },
+    {
+      "type": "dropdown",
+      "id": "presence_of_motor_deficit",
+      "label": "Presence of Motor Deficit",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "wfns",
+      "label": "WFNS",
+      "formula": "IF(glasgow_coma_scale == 15, 1, IF((glasgow_coma_scale == 13 OR glasgow_coma_scale == 14) AND presence_of_motor_deficit == 0, 2, IF((glasgow_coma_scale == 13 OR glasgow_coma_scale == 14) AND presence_of_motor_deficit == 1, 3, IF(glasgow_coma_scale >= 7 AND glasgow_coma_scale <= 12, 4, IF(glasgow_coma_scale >= 3 AND glasgow_coma_scale <= 6, 5, 999)))))",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.508Z",
+  "updatedAt": "2026-03-06T13:17:08.508Z"
+}

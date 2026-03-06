@@ -1,0 +1,36 @@
+{
+  "id": "length-conversions",
+  "name": "Length Conversions",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "length",
+      "label": "Length",
+      "defaultUnit": "cm",
+      "units": [
+        {
+          "label": "cm",
+          "factor": 1
+        },
+        {
+          "label": "m",
+          "factor": 100
+        },
+        {
+          "label": "inches",
+          "factor": 2.54
+        },
+        {
+          "label": "feet",
+          "factor": 30.48
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.000Z",
+  "updatedAt": "2026-03-06T13:16:04.000Z"
+}

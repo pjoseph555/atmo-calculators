@@ -1,0 +1,131 @@
+{
+  "id": "apgar-81307",
+  "name": "APGAR",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "appearance",
+      "label": "Appearance",
+      "options": [
+        {
+          "label": "Please choose",
+          "value": 0
+        },
+        {
+          "label": "Blue all over 0",
+          "value": 0
+        },
+        {
+          "label": "Acrocyanosis 1",
+          "value": 1
+        },
+        {
+          "label": "Pink 2",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pulse",
+      "label": "Pulse",
+      "options": [
+        {
+          "label": "Please choose",
+          "value": 0
+        },
+        {
+          "label": "No pulse 0",
+          "value": 0
+        },
+        {
+          "label": ">100 2",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "grimace",
+      "label": "Grimace",
+      "options": [
+        {
+          "label": "Please choose",
+          "value": 0
+        },
+        {
+          "label": "No response 0",
+          "value": 0
+        },
+        {
+          "label": "Grimace/feeble cry 1",
+          "value": 1
+        },
+        {
+          "label": "Sneeze/cough/pulls away 2",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "activity",
+      "label": "Activity",
+      "options": [
+        {
+          "label": "Please choose",
+          "value": 0
+        },
+        {
+          "label": "None 0",
+          "value": 0
+        },
+        {
+          "label": "Some flexion 1",
+          "value": 1
+        },
+        {
+          "label": "Active movement 2",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "respiration",
+      "label": "Respiration",
+      "options": [
+        {
+          "label": "Please choose",
+          "value": 0
+        },
+        {
+          "label": "Absent 0",
+          "value": 0
+        },
+        {
+          "label": "Weak/irregular 1",
+          "value": 1
+        },
+        {
+          "label": "Strong 2",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "appearance + pulse + grimace + activity + respiration",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.144Z",
+  "updatedAt": "2026-03-06T13:17:08.144Z"
+}

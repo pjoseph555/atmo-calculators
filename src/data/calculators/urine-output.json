@@ -1,0 +1,27 @@
+{
+  "id": "urine-output",
+  "name": "Urine Output",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "amount_of_urine",
+      "label": "Amount of Urine"
+    },
+    {
+      "type": "numeric",
+      "id": "per",
+      "label": "per"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.452Z",
+  "updatedAt": "2026-03-06T13:16:04.452Z"
+}

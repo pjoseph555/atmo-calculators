@@ -1,0 +1,36 @@
+{
+  "id": "urine-output-81384",
+  "name": "Urine Output",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "amount_of_urine",
+      "label": "Amount of Urine"
+    },
+    {
+      "type": "numeric",
+      "id": "per",
+      "label": "per"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "urine_output",
+      "label": "Urine Output",
+      "formula": "amount_of_urine * 1000 / weight / per",
+      "precision": 2,
+      "defaultUnit": "mL/kg/hr"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.486Z",
+  "updatedAt": "2026-03-06T13:17:08.486Z"
+}

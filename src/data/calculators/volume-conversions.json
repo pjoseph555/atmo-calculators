@@ -1,0 +1,76 @@
+{
+  "id": "volume-conversions",
+  "name": "Volume Conversions",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "quantity",
+      "label": "Quantity",
+      "defaultUnit": "mL",
+      "units": [
+        {
+          "label": "mL",
+          "factor": 1
+        },
+        {
+          "label": "microliter",
+          "factor": 0.001
+        },
+        {
+          "label": "cc",
+          "factor": 1
+        },
+        {
+          "label": "deciliter",
+          "factor": 100
+        },
+        {
+          "label": "liter",
+          "factor": 1000
+        },
+        {
+          "label": "ounces",
+          "factor": 29.5735296
+        },
+        {
+          "label": "cups",
+          "factor": 236.588237
+        },
+        {
+          "label": "pints",
+          "factor": 473.176473
+        },
+        {
+          "label": "quarts",
+          "factor": 946.352946
+        },
+        {
+          "label": "gallons",
+          "factor": 3785.41178
+        },
+        {
+          "label": "teaspoons",
+          "factor": 4.92892159
+        },
+        {
+          "label": "tablespoons",
+          "factor": 14.7867648
+        },
+        {
+          "label": "dram",
+          "factor": 3.697
+        },
+        {
+          "label": "minim",
+          "factor": 0.062
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.960Z",
+  "updatedAt": "2026-03-06T13:16:03.960Z"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "aminoglycosides-dosing",
+  "name": "Aminoglycosides Dosing",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "sex",
+      "label": "Sex",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 0.85
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "numeric",
+      "id": "height",
+      "label": "Height"
+    },
+    {
+      "type": "numeric",
+      "id": "actual_total_weight",
+      "label": "Actual Total Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "serum_creatinine",
+      "label": "Serum Creatinine"
+    },
+    {
+      "type": "numeric",
+      "id": "cmax",
+      "label": "Cmax"
+    },
+    {
+      "type": "numeric",
+      "id": "cmin",
+      "label": "Cmin"
+    },
+    {
+      "type": "numeric",
+      "id": "length_of_infusion",
+      "label": "Length of Infusion"
+    },
+    {
+      "type": "dropdown",
+      "id": "volume_overload_or_critically_ill",
+      "label": "Volume Overload or Critically Ill",
+      "options": [
+        {
+          "label": "Yes",
+          "value": 1
+        },
+        {
+          "label": "No",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "esrd",
+      "label": "ESRD",
+      "options": [
+        {
+          "label": "Yes",
+          "value": 1
+        },
+        {
+          "label": "No",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "dosing_weight",
+      "label": "Dosing Weight",
+      "formula": "IF(sex == 1, IF(actual_total_weight >= 0.7 * (50 + 2.3 * (height - 60)) AND actual_total_weight <= 1.3 * (50 + 2.3 * (height - 60)), actual_total_weight, 50 + 2.3 * (height - 60) + 0.4 * (actual_total_weight - (50 + 2.3 * (height - 60)))), IF(actual_total_weight >= 0.7 * (45.5 + 2.3 * (height - 60)) AND actual_total_weight <= 1.3 * (45.5 + 2.3 * (height - 60)), actual_total_weight, 45.5 + 2.3 * (height - 60) + 0.4 * (actual_total_weight - (45.5 + 2.3 * (height - 60)))))",
+      "precision": 2,
+      "defaultUnit": "kg"
+    },
+    {
+      "type": "numeric",
+      "id": "creatine_clearance_crcl",
+      "label": "Creatine Clearance (CrCL)",
+      "formula": "(140 - age) * dosing_weight * sex / (72 * serum_creatinine)",
+      "precision": 2,
+      "defaultUnit": "mL/min"
+    },
+    {
+      "type": "numeric",
+      "id": "elimination_rate",
+      "label": "Elimination Rate",
+      "formula": "IF(esrd == 1, 0.015, 0.00293 * creatine_clearance_crcl + 0.014)",
+      "precision": 2,
+      "defaultUnit": "hr -1"
+    },
+    {
+      "type": "numeric",
+      "id": "dosing_interval",
+      "label": "Dosing Interval",
+      "formula": "(ln(cmax) - ln(cmin)) / elimination_rate + length_of_infusion",
+      "precision": 2,
+      "defaultUnit": "hrs"
+    },
+    {
+      "type": "numeric",
+      "id": "volume_of_distribution",
+      "label": "Volume of Distribution",
+      "formula": "IF(volume_overload_or_critically_ill == 1, 0.30 * dosing_weight, 0.26 * dosing_weight)",
+      "precision": 2,
+      "defaultUnit": "L"
+    },
+    {
+      "type": "numeric",
+      "id": "loading_dose_for_iv_infusion",
+      "label": "Loading Dose for IV Infusion",
+      "formula": "length_of_infusion * elimination_rate * volume_of_distribution * cmax / (1 - 1 / 2.71828 ^ (elimination_rate * length_of_infusion))",
+      "precision": 2,
+      "defaultUnit": "mg"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.502Z",
+  "updatedAt": "2026-03-06T13:16:04.502Z"
+}

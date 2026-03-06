@@ -1,0 +1,140 @@
+{
+  "id": "glasgow-scoring-system-for-pancreatitis-81339",
+  "name": "Glasgow Scoring System for Pancreatitis",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "age_55_yr",
+      "label": "Age > 55 yr",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "wbc_15_g_l",
+      "label": "WBC > 15 G/L",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "glucose_180_mg_dl",
+      "label": "Glucose > 180 mg/dL",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "ldh_600_ui_l",
+      "label": "LDH > 600 UI/L",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "ca_80_mg_l",
+      "label": "Ca < 80 mg/L",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "albumin_32_g_l",
+      "label": "Albumin < 32 g/L",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f7",
+      "label": "f7",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "bun_45_mg_dl",
+      "label": "BUN > 45 mg/dL",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "age_55_yr + wbc_15_g_l + glucose_180_mg_dl + ldh_600_ui_l + ca_80_mg_l + albumin_32_g_l + f7 + bun_45_mg_dl",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.298Z",
+  "updatedAt": "2026-03-06T13:17:08.298Z"
+}

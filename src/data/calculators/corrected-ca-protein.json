@@ -1,0 +1,22 @@
+{
+  "id": "corrected-ca-protein",
+  "name": "Corrected Ca (Protein)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "calcium",
+      "label": "Calcium"
+    },
+    {
+      "type": "numeric",
+      "id": "protein",
+      "label": "Protein"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.163Z",
+  "updatedAt": "2026-03-06T13:16:04.163Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "corrected-na-lipids-81320",
+  "name": "Corrected Na (lipids)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "na",
+      "label": "Na"
+    },
+    {
+      "type": "numeric",
+      "id": "triglycerides",
+      "label": "Triglycerides"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_na",
+      "label": "Corrected Na",
+      "formula": "na + 0.002 * triglycerides",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.207Z",
+  "updatedAt": "2026-03-06T13:17:08.207Z"
+}

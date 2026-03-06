@@ -1,0 +1,32 @@
+{
+  "id": "fract-excr-of-na-fena",
+  "name": "Fract Excr of Na (FENa)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "pi_na",
+      "label": "PI Na"
+    },
+    {
+      "type": "numeric",
+      "id": "pi_creatinine",
+      "label": "PI Creatinine"
+    },
+    {
+      "type": "numeric",
+      "id": "u_na",
+      "label": "U Na"
+    },
+    {
+      "type": "numeric",
+      "id": "u_creatinine",
+      "label": "U Creatinine"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.234Z",
+  "updatedAt": "2026-03-06T13:16:04.234Z"
+}

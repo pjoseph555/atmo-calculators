@@ -1,0 +1,17 @@
+{
+  "id": "maintenance-fluid-children",
+  "name": "Maintenance Fluid (children)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.316Z",
+  "updatedAt": "2026-03-06T13:16:04.316Z"
+}

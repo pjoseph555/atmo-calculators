@@ -1,0 +1,45 @@
+{
+  "id": "blood-alchohal-content-nygs",
+  "name": "blood alchohal content",
+  "description": "",
+  "category": "",
+  "status": "draft",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "input_1772763970946",
+      "label": "New Input"
+    },
+    {
+      "type": "dropdown",
+      "id": "input_1772763974141",
+      "label": "New Dropdown",
+      "options": [
+        {
+          "label": "Option 1",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "output_1772763981374",
+      "label": "New Output",
+      "formula": "",
+      "precision": 2
+    },
+    {
+      "type": "numeric",
+      "id": "output_1772763981946",
+      "label": "New Output",
+      "formula": "",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T02:26:25.817Z",
+  "updatedAt": "2026-03-06T02:26:25.817Z"
+}

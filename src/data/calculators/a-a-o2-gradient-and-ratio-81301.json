@@ -1,0 +1,61 @@
+{
+  "id": "a-a-o2-gradient-and-ratio-81301",
+  "name": "A-a O2 Gradient and Ratio",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    },
+    {
+      "type": "numeric",
+      "id": "f2",
+      "label": "f2"
+    },
+    {
+      "type": "numeric",
+      "id": "atm_pressure",
+      "label": "Atm pressure"
+    },
+    {
+      "type": "numeric",
+      "id": "f4",
+      "label": "f4"
+    },
+    {
+      "type": "numeric",
+      "id": "rq",
+      "label": "RQ"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "o1",
+      "label": "o1",
+      "formula": "f4 * 0.01 * (atm_pressure - 47) - f2 / rq",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    },
+    {
+      "type": "numeric",
+      "id": "a_a_gradient",
+      "label": "A-a gradient",
+      "formula": "o1 - f1",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    },
+    {
+      "type": "numeric",
+      "id": "a_a_ratio",
+      "label": "a/A ratio",
+      "formula": "f1 / o1",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.122Z",
+  "updatedAt": "2026-03-06T13:17:08.122Z"
+}

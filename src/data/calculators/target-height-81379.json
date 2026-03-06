@@ -1,0 +1,62 @@
+{
+  "id": "target-height-81379",
+  "name": "Target Height",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "mother_s_height",
+      "label": "Mother's Height"
+    },
+    {
+      "type": "numeric",
+      "id": "father_s_height",
+      "label": "Father's Height"
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "target_height",
+      "label": "Target Height",
+      "formula": "IF(gender == 1, (father_s_height + mother_s_height + 0.13) / 2, (father_s_height + mother_s_height - 0.13) / 2)",
+      "precision": 2,
+      "defaultUnit": "m"
+    },
+    {
+      "type": "numeric",
+      "id": "lower",
+      "label": "Lower:",
+      "formula": "IF(gender == 1, (father_s_height + mother_s_height + 0.13) / 2 - 8.5 / 100, (father_s_height + mother_s_height - 0.13) / 2 - 8.5 / 100)",
+      "precision": 2,
+      "defaultUnit": "m"
+    },
+    {
+      "type": "numeric",
+      "id": "upper",
+      "label": "Upper:",
+      "formula": "IF(gender == 1, (father_s_height + mother_s_height + 0.13) / 2 + 8.5 / 100, (father_s_height + mother_s_height - 0.13) / 2 + 8.5 / 100)",
+      "precision": 2,
+      "defaultUnit": "m"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.462Z",
+  "updatedAt": "2026-03-06T13:17:08.462Z"
+}

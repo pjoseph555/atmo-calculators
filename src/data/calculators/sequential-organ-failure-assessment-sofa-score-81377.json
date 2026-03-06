@@ -1,0 +1,150 @@
+{
+  "id": "sequential-organ-failure-assessment-sofa-score-81377",
+  "name": "Sequential Organ Failure Assessment (SOFA) Score",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "cardiovascular_vasopressor_doses_in_ug_k",
+      "label": "Cardiovascular (vasopressor doses in ug/kg/min)",
+      "options": [
+        {
+          "label": "MAP >= 70 mmHg",
+          "value": 0
+        },
+        {
+          "label": "Dop > 15 / Epi > 0.1 / Nor > 0.1",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f2",
+      "label": "f2",
+      "options": [
+        {
+          "label": "> 149",
+          "value": 0
+        },
+        {
+          "label": "100-149",
+          "value": 1
+        },
+        {
+          "label": "50-99",
+          "value": 2
+        },
+        {
+          "label": "20-49",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "liver_bilirubin",
+      "label": "Liver (Bilirubin)",
+      "options": [
+        {
+          "label": "1.2-1.9 mg/dL (20-32 umol/L)",
+          "value": 1
+        },
+        {
+          "label": "2.0-5.9 mg/dL (33-101 umol/L)",
+          "value": 2
+        },
+        {
+          "label": "6.0-11.9 mg/dL (102-204 umol/L)",
+          "value": 3
+        },
+        {
+          "label": "> 12.0 mg/dL (> 204 umol/L)",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "central_nervous_system_glasgow_coma_scor",
+      "label": "Central Nervous System (Glasgow coma score)",
+      "options": [
+        {
+          "label": "15 pts",
+          "value": 0
+        },
+        {
+          "label": "13-14 pts",
+          "value": 1
+        },
+        {
+          "label": "10-12 pts",
+          "value": 2
+        },
+        {
+          "label": "6-9 pts",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "renal",
+      "label": "Renal",
+      "options": [
+        {
+          "label": "1.2-1.9 mg/dL (110-170 umol/L)",
+          "value": 1
+        },
+        {
+          "label": "2.0-3.4 mg/dL (171-299 umol/L)",
+          "value": 2
+        },
+        {
+          "label": "3.5-4.9 mg/dL (300-440 umol/L)",
+          "value": 3
+        },
+        {
+          "label": "> 5.0 mg/dL (> 440 umol/L)",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f6",
+      "label": "f6",
+      "options": [
+        {
+          "label": "> 400",
+          "value": 0
+        },
+        {
+          "label": "300-399",
+          "value": 1
+        },
+        {
+          "label": "200-299",
+          "value": 2
+        },
+        {
+          "label": "100-199 (with respiratory support)",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "cardiovascular_vasopressor_doses_in_ug_k + f2 + liver_bilirubin + central_nervous_system_glasgow_coma_scor + renal + f6",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.453Z",
+  "updatedAt": "2026-03-06T13:17:08.453Z"
+}

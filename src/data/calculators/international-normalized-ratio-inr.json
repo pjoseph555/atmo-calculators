@@ -1,0 +1,27 @@
+{
+  "id": "international-normalized-ratio-inr",
+  "name": "International Normalized Ratio (INR)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "prothrombin_time_patient",
+      "label": "Prothrombin Time (patient)"
+    },
+    {
+      "type": "numeric",
+      "id": "prothrombin_time_normal",
+      "label": "Prothrombin Time (normal)"
+    },
+    {
+      "type": "numeric",
+      "id": "international_sensitivity_index_isi",
+      "label": "International Sensitivity Index (ISI)"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.005Z",
+  "updatedAt": "2026-03-06T13:16:04.005Z"
+}

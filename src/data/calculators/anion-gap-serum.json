@@ -1,0 +1,40 @@
+{
+  "id": "anion-gap-serum",
+  "name": "Anion Gap (Serum)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "na",
+      "label": "Na"
+    },
+    {
+      "type": "numeric",
+      "id": "cl",
+      "label": "Cl"
+    },
+    {
+      "type": "numeric",
+      "id": "f3",
+      "label": "f3"
+    },
+    {
+      "type": "numeric",
+      "id": "albumin",
+      "label": "Albumin"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "anion_gap_mmol_l",
+      "label": "Anion Gap (mmol/L)",
+      "formula": "na - (cl + f3)",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.098Z",
+  "updatedAt": "2026-03-06T13:16:04.098Z"
+}

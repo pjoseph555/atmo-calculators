@@ -1,0 +1,17 @@
+{
+  "id": "heart-rate-max-predicted-by-age",
+  "name": "Heart Rate (Max Predicted by Age)",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.015Z",
+  "updatedAt": "2026-03-06T13:16:04.015Z"
+}

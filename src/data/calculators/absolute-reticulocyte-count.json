@@ -1,0 +1,33 @@
+{
+  "id": "absolute-reticulocyte-count",
+  "name": "Absolute Reticulocyte Count",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "reticulocytes",
+      "label": "Reticulocytes",
+      "defaultUnit": "Fraction",
+      "units": [
+        {
+          "label": "Fraction",
+          "factor": 1
+        },
+        {
+          "label": "%",
+          "factor": 0.01
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "rbc_count_x_10_6_mm3",
+      "label": "RBC Count (x 10^6/mm3)"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.979Z",
+  "updatedAt": "2026-03-06T13:16:03.979Z"
+}

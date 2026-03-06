@@ -1,0 +1,261 @@
+{
+  "id": "euroscore",
+  "name": "EuroSCORE",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 0
+        },
+        {
+          "label": "Female",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "copd",
+      "label": "COPD",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "extracardiac_arteriopathy",
+      "label": "Extracardiac arteriopathy",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "neurological_dysfunction",
+      "label": "Neurological dysfunction",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "previous_cardiac_surgery",
+      "label": "Previous Cardiac Surgery",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "creatinine_200_umol_l",
+      "label": "Creatinine >200 umol/L",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "active_endocarditis",
+      "label": "Active endocarditis",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "critical_preoperative_state",
+      "label": "Critical preoperative state",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "lv_function",
+      "label": "LV Function",
+      "options": [
+        {
+          "label": "Poor",
+          "value": 3
+        },
+        {
+          "label": "Moderate",
+          "value": 1
+        },
+        {
+          "label": "Good",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "unstable_angina",
+      "label": "Unstable angina",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "recent_mi",
+      "label": "Recent MI",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pulmonary_hypertension",
+      "label": "Pulmonary Hypertension",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "emergency",
+      "label": "Emergency",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "other_than_isolated_cabg",
+      "label": "Other than isolated CABG",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sx_on_thoracic_aorta",
+      "label": "Sx on Thoracic Aorta",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "post_infarct_septal_rupture",
+      "label": "Post-infarct Septal Rupture",
+      "options": [
+        {
+          "label": "No",
+          "value": 0
+        },
+        {
+          "label": "Yes",
+          "value": 4
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.214Z",
+  "updatedAt": "2026-03-06T13:16:04.214Z"
+}

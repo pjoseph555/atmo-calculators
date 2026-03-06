@@ -1,0 +1,101 @@
+{
+  "id": "glasgow-coma-scale-81337",
+  "name": "Glasgow Coma Scale",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "dropdown",
+      "id": "eye",
+      "label": "Eye",
+      "options": [
+        {
+          "label": "None",
+          "value": 1
+        },
+        {
+          "label": "To pain",
+          "value": 2
+        },
+        {
+          "label": "To speech",
+          "value": 3
+        },
+        {
+          "label": "Spontaneous",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "verbal",
+      "label": "Verbal",
+      "options": [
+        {
+          "label": "None",
+          "value": 1
+        },
+        {
+          "label": "Incomprehensible sounds",
+          "value": 2
+        },
+        {
+          "label": "Inappropriate words",
+          "value": 3
+        },
+        {
+          "label": "Confused / disoriented",
+          "value": 4
+        },
+        {
+          "label": "Oriented",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "motor",
+      "label": "Motor",
+      "options": [
+        {
+          "label": "None",
+          "value": 1
+        },
+        {
+          "label": "Extension to pain",
+          "value": 2
+        },
+        {
+          "label": "Abnormal flexion to pain",
+          "value": 3
+        },
+        {
+          "label": "Withdraws from pain",
+          "value": 4
+        },
+        {
+          "label": "Localises pain",
+          "value": 5
+        },
+        {
+          "label": "Obeys command",
+          "value": 6
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "gcs",
+      "label": "GCS",
+      "formula": "eye + verbal + motor",
+      "precision": 2
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.288Z",
+  "updatedAt": "2026-03-06T13:17:08.288Z"
+}

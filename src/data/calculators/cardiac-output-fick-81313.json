@@ -1,0 +1,54 @@
+{
+  "id": "cardiac-output-fick-81313",
+  "name": "Cardiac Output (Fick)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "f1",
+      "label": "f1"
+    },
+    {
+      "type": "numeric",
+      "id": "hemoglobin",
+      "label": "Hemoglobin"
+    },
+    {
+      "type": "numeric",
+      "id": "f3",
+      "label": "f3"
+    },
+    {
+      "type": "numeric",
+      "id": "f4",
+      "label": "f4"
+    },
+    {
+      "type": "numeric",
+      "id": "bsa",
+      "label": "BSA"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "cardiac_output",
+      "label": "Cardiac Output",
+      "formula": "f1 / (13.4 * hemoglobin * (f3 - f4) / 100)",
+      "precision": 2,
+      "defaultUnit": "L/min"
+    },
+    {
+      "type": "numeric",
+      "id": "cardiac_index",
+      "label": "Cardiac Index",
+      "formula": "cardiac_output / bsa",
+      "precision": 2,
+      "defaultUnit": "L/min/m^2"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.175Z",
+  "updatedAt": "2026-03-06T13:17:08.175Z"
+}

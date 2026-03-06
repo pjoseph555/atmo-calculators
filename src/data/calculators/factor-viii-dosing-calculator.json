@@ -1,0 +1,33 @@
+{
+  "id": "factor-viii-dosing-calculator",
+  "name": "Factor VIII Dosing Calculator",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight",
+      "defaultUnit": "kg",
+      "units": [
+        {
+          "label": "kg",
+          "factor": 1
+        },
+        {
+          "label": "lbs",
+          "factor": 0.454
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "id": "desired_factor_viii_increase",
+      "label": "Desired Factor VIII Increase"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:03.969Z",
+  "updatedAt": "2026-03-06T13:16:03.969Z"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bicarbonate-deficit",
+  "name": "Bicarbonate Deficit",
+  "status": "active",
+  "complexity": "simple",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "weight",
+      "label": "Weight"
+    },
+    {
+      "type": "numeric",
+      "id": "f2",
+      "label": "f2"
+    }
+  ],
+  "outputs": [],
+  "version": 1,
+  "createdAt": "2026-03-06T13:16:04.118Z",
+  "updatedAt": "2026-03-06T13:16:04.118Z"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "post-test-prob-sn-sp-81367",
+  "name": "Post-test Prob. (Sn/Sp)",
+  "status": "active",
+  "complexity": "moderate",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "pre_test_probability",
+      "label": "Pre-test probability"
+    },
+    {
+      "type": "numeric",
+      "id": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "type": "numeric",
+      "id": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "type": "dropdown",
+      "id": "test_result",
+      "label": "Test result",
+      "options": [
+        {
+          "label": "Positive",
+          "value": 1
+        },
+        {
+          "label": "Negative",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "post_test_probability",
+      "label": "Post-test probability",
+      "formula": "IF(test_result == 1, pre_test_probability * sensitivity * 0.0001 / (pre_test_probability * sensitivity * 0.0001 + (1 - pre_test_probability * 0.01) * (1 - specificity * 0.01)) * 100, pre_test_probability * 0.01 * (1 - sensitivity * 0.01) / (pre_test_probability * 0.01 * (1 - sensitivity * 0.01) + (1 - pre_test_probability * 0.01) * specificity * 0.01) * 100)",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.408Z",
+  "updatedAt": "2026-03-06T13:17:08.408Z"
+}

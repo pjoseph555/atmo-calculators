@@ -1,0 +1,311 @@
+{
+  "id": "pneumonia-severity-index-81366",
+  "name": "Pneumonia Severity Index",
+  "status": "active",
+  "complexity": "complex",
+  "inputs": [
+    {
+      "type": "numeric",
+      "id": "age",
+      "label": "Age"
+    },
+    {
+      "type": "dropdown",
+      "id": "gender",
+      "label": "Gender",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1
+        },
+        {
+          "label": "Female",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "nursing_home_resident",
+      "label": "Nursing Home Resident",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "neoplastic_disease",
+      "label": "Neoplastic Disease",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "liver_disease",
+      "label": "Liver Disease",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "congestive_heart_failure",
+      "label": "Congestive Heart Failure",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "cerebrovascular_disease",
+      "label": "Cerebrovascular Disease",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "renal_disease",
+      "label": "Renal Disease",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "altered_mental_status",
+      "label": "Altered Mental Status",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "respiratory_rate_30_min",
+      "label": "Respiratory Rate >= 30/min",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "sbp_90mmhg",
+      "label": "SBP < 90mmHg",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "temperature_35_or_40c",
+      "label": "Temperature <35 or >=40C",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pulse_125_min",
+      "label": "Pulse >= 125/min",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "arterial_ph_7_35",
+      "label": "Arterial pH <7.35",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "urea_11_mmol_l",
+      "label": "Urea >= 11 mmol/L",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "na_130_mmol_l",
+      "label": "Na < 130 mmol/L",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "glucose_14_mmol_l",
+      "label": "Glucose >= 14 mmol/L",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "hematocrit_30",
+      "label": "Hematocrit < 30%",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "f19",
+      "label": "f19",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "id": "pleural_effusion",
+      "label": "Pleural Effusion",
+      "options": [
+        {
+          "label": "NO",
+          "value": 0
+        },
+        {
+          "label": "YES",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "IF(gender == 1, age + nursing_home_resident + neoplastic_disease + liver_disease + congestive_heart_failure + cerebrovascular_disease + renal_disease + altered_mental_status + respiratory_rate_30_min + sbp_90mmhg + temperature_35_or_40c + pulse_125_min + arterial_ph_7_35 + urea_11_mmol_l + na_130_mmol_l + glucose_14_mmol_l + hematocrit_30 + f19 + pleural_effusion, age + nursing_home_resident + neoplastic_disease + liver_disease + congestive_heart_failure + cerebrovascular_disease + renal_disease + altered_mental_status + respiratory_rate_30_min + sbp_90mmhg + temperature_35_or_40c + pulse_125_min + arterial_ph_7_35 + urea_11_mmol_l + na_130_mmol_l + glucose_14_mmol_l + hematocrit_30 + f19 + pleural_effusion - 10)",
+      "precision": 2,
+      "defaultUnit": "pts"
+    }
+  ],
+  "version": 1,
+  "createdAt": "2026-03-06T13:17:08.403Z",
+  "updatedAt": "2026-03-06T13:17:08.403Z"
+}
