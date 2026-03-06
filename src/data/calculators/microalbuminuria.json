@@ -15,8 +15,16 @@
       "label": "U Creatinine"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "alb_cr_ratio",
+      "label": "Alb / Cr ratio",
+      "formula": "u_albumin / u_creatinine",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.322Z",
-  "updatedAt": "2026-03-06T13:16:04.322Z"
+  "createdAt": "2026-03-06T14:19:02.304Z",
+  "updatedAt": "2026-03-06T14:19:02.304Z"
 }

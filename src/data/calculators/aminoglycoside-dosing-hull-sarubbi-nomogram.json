@@ -90,7 +90,7 @@
     },
     {
       "type": "numeric",
-      "id": "8_hr_conventional_maintenance_dosing_min",
+      "id": "v8_hr_conventional_maintenance_dosing_min",
       "label": "8 hr Conventional Maintenance Dosing (min)",
       "formula": "IF(creatine_clearance_crcl > 90, loading_dose_min * 0.9, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, loading_dose_min * 0.84, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, loading_dose_min * 0.80, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, loading_dose_min * 0.76, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, loading_dose_min * 0.71, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, loading_dose_min * 0.65, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_min * 0.57, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_min * 0.48, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_min * 0.43, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_min * 0.37, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_min * 0.33, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_min * 0.31, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_min * 0.27, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_min * 0.24, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_min * 0.19, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_min * 0.16, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_min * 0.11, loading_dose_min * 0.08)))))))))))))))))",
       "precision": 2,
@@ -98,7 +98,7 @@
     },
     {
       "type": "numeric",
-      "id": "8_hr_conventional_maintenance_dosing_max",
+      "id": "v8_hr_conventional_maintenance_dosing_max",
       "label": "8 hr Conventional Maintenance Dosing (max)",
       "formula": "IF(creatine_clearance_crcl > 90, loading_dose_max * 0.9, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, loading_dose_max * 0.84, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, loading_dose_max * 0.80, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, loading_dose_max * 0.76, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, loading_dose_max * 0.71, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, loading_dose_max * 0.65, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_max * 0.57, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_max * 0.48, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_max * 0.43, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_max * 0.37, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_max * 0.33, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_max * 0.31, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_max * 0.27, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_max * 0.24, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_max * 0.19, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_max * 0.16, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_max * 0.11, loading_dose_max * 0.08)))))))))))))))))",
       "precision": 2,
@@ -106,7 +106,7 @@
     },
     {
       "type": "numeric",
-      "id": "12_hr_conventional_maintenance_dosing_mi",
+      "id": "v12_hr_conventional_maintenance_dosing_mi",
       "label": "12 hr Conventional Maintenance Dosing (min)",
       "formula": "IF(creatine_clearance_crcl > 90, 0, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, 0, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, loading_dose_min * 0.91, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, loading_dose_min * 0.88, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, loading_dose_min * 0.84, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, loading_dose_min * 0.79, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_min * 0.72, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_min * 0.63, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_min * 0.57, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_min * 0.50, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_min * 0.46, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_min * 0.42, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_min * 0.37, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_min * 0.34, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_min * 0.28, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_min * 0.23, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_min * 0.16, loading_dose_min * 0.11)))))))))))))))))",
       "precision": 2,
@@ -114,7 +114,7 @@
     },
     {
       "type": "numeric",
-      "id": "12_hr_conventional_maintenance_dosing_ma",
+      "id": "v12_hr_conventional_maintenance_dosing_ma",
       "label": "12 hr Conventional Maintenance Dosing (max)",
       "formula": "IF(creatine_clearance_crcl > 90, 0, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, 0, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, loading_dose_max * 0.91, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, loading_dose_max * 0.88, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, loading_dose_max * 0.84, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, loading_dose_max * 0.79, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_max * 0.72, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_max * 0.63, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_max * 0.57, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_max * 0.50, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_max * 0.46, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_max * 0.42, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_max * 0.37, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_max * 0.34, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_max * 0.28, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_max * 0.23, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_max * 0.16, loading_dose_max * 0.11)))))))))))))))))",
       "precision": 2,
@@ -122,14 +122,22 @@
     },
     {
       "type": "numeric",
-      "id": "24_hr_conventional_maintenance_dosing_mi",
+      "id": "v24_hr_conventional_maintenance_dosing_mi",
       "label": "24 hr Conventional Maintenance Dosing (min)",
       "formula": "IF(creatine_clearance_crcl > 90, 0, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, 0, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, 0, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, 0, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, 0, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, 0, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_min * 0.92, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_min * 0.86, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_min * 0.81, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_min * 0.75, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_min * 0.70, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_min * 0.67, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_min * 0.61, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_min * 0.56, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_min * 0.47, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_min * 0.41, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_min * 0.30, loading_dose_min * 0.21)))))))))))))))))",
+      "precision": 2,
+      "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "v24_hr_conventional_maintenance_dosing_ma",
+      "label": "24 hr Conventional Maintenance Dosing (max)",
+      "formula": "IF(creatine_clearance_crcl > 90, 0, IF(creatine_clearance_crcl > 80 AND creatine_clearance_crcl <= 90, 0, IF(creatine_clearance_crcl > 70 AND creatine_clearance_crcl <= 80, 0, IF(creatine_clearance_crcl > 60 AND creatine_clearance_crcl <= 70, 0, IF(creatine_clearance_crcl > 50 AND creatine_clearance_crcl <= 60, 0, IF(creatine_clearance_crcl > 40 AND creatine_clearance_crcl <= 50, 0, IF(creatine_clearance_crcl > 30 AND creatine_clearance_crcl <= 40, loading_dose_max * 0.92, IF(creatine_clearance_crcl > 25 AND creatine_clearance_crcl <= 30, loading_dose_max * 0.86, IF(creatine_clearance_crcl > 20 AND creatine_clearance_crcl <= 25, loading_dose_max * 0.81, IF(creatine_clearance_crcl > 17 AND creatine_clearance_crcl <= 20, loading_dose_max * 0.75, IF(creatine_clearance_crcl > 15 AND creatine_clearance_crcl <= 17, loading_dose_max * 0.70, IF(creatine_clearance_crcl > 12 AND creatine_clearance_crcl <= 15, loading_dose_max * 0.67, IF(creatine_clearance_crcl > 10 AND creatine_clearance_crcl <= 12, loading_dose_max * 0.61, IF(creatine_clearance_crcl > 7 AND creatine_clearance_crcl <= 10, loading_dose_max * 0.56, IF(creatine_clearance_crcl > 5 AND creatine_clearance_crcl <= 7, loading_dose_max * 0.47, IF(creatine_clearance_crcl > 2 AND creatine_clearance_crcl <= 5, loading_dose_max * 0.41, IF(creatine_clearance_crcl > 1 AND creatine_clearance_crcl <= 2, loading_dose_max * 0.30, loading_dose_max * 0.21)))))))))))))))))",
       "precision": 2,
       "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.497Z",
-  "updatedAt": "2026-03-06T13:16:04.497Z"
+  "createdAt": "2026-03-06T14:19:02.473Z",
+  "updatedAt": "2026-03-06T14:19:02.473Z"
 }

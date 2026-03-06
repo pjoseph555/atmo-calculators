@@ -53,9 +53,17 @@
       "formula": "25 - f3",
       "precision": 2,
       "defaultUnit": "mmol/L"
+    },
+    {
+      "type": "numeric",
+      "id": "delta_anion_gap",
+      "label": "Delta Anion Gap",
+      "formula": "na - (cl + f3) - normal_gap + 0.25 * (40 - albumin)",
+      "precision": 2,
+      "defaultUnit": "mmol/L"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.196Z",
-  "updatedAt": "2026-03-06T13:16:04.196Z"
+  "createdAt": "2026-03-06T14:19:02.170Z",
+  "updatedAt": "2026-03-06T14:19:02.170Z"
 }

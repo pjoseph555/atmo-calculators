@@ -15,8 +15,17 @@
       "label": "Glucose"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_na",
+      "label": "Corrected Na",
+      "formula": "na + (glucose - 5) / 3.5",
+      "precision": 2,
+      "defaultUnit": "mmol/L"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.168Z",
-  "updatedAt": "2026-03-06T13:16:04.168Z"
+  "createdAt": "2026-03-06T14:19:02.140Z",
+  "updatedAt": "2026-03-06T14:19:02.140Z"
 }

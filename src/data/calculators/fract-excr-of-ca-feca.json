@@ -2,7 +2,7 @@
   "id": "fract-excr-of-ca-feca",
   "name": "Fract Excr of Ca (FECa)",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,17 @@
       "label": "U Creatinine"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "f_e_ca",
+      "label": "F.E. Ca",
+      "formula": "u_calcium * pi_creatinine / (u_creatinine * pi_calcium)",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.229Z",
-  "updatedAt": "2026-03-06T13:16:04.229Z"
+  "createdAt": "2026-03-06T14:19:02.207Z",
+  "updatedAt": "2026-03-06T14:19:02.207Z"
 }

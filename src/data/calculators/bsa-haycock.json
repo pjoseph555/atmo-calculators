@@ -41,8 +41,17 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "bsa",
+      "label": "BSA",
+      "formula": "0.024265 * height ^ 0.3964 * weight ^ 0.5378",
+      "precision": 2,
+      "defaultUnit": "m2"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.941Z",
-  "updatedAt": "2026-03-06T13:16:03.941Z"
+  "createdAt": "2026-03-06T14:19:01.930Z",
+  "updatedAt": "2026-03-06T14:19:01.930Z"
 }

@@ -15,8 +15,17 @@
       "label": "Hematocrit"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "plasma_volume",
+      "label": "Plasma Volume",
+      "formula": "0.065 * weight * (1 - hematocrit / 100) * 1000",
+      "precision": 2,
+      "defaultUnit": "mL"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.364Z",
-  "updatedAt": "2026-03-06T13:16:04.364Z"
+  "createdAt": "2026-03-06T14:19:02.346Z",
+  "updatedAt": "2026-03-06T14:19:02.346Z"
 }

@@ -2,7 +2,7 @@
   "id": "delta-pulse-pressure",
   "name": "Delta Pulse Pressure",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,17 @@
       "label": "Minimum Diatolic BP"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "delta_pp",
+      "label": "Delta PP",
+      "formula": "(maximum_systolic_bp - maximum_diastolic_bp - (minimum_systolic_bp - minimum_diatolic_bp)) / ((maximum_systolic_bp - maximum_diastolic_bp + (minimum_systolic_bp - minimum_diatolic_bp)) / 2) * 100",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.200Z",
-  "updatedAt": "2026-03-06T13:16:04.200Z"
+  "createdAt": "2026-03-06T14:19:02.175Z",
+  "updatedAt": "2026-03-06T14:19:02.175Z"
 }

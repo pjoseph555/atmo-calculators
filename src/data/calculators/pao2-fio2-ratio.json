@@ -15,8 +15,17 @@
       "label": "f2"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "o1",
+      "label": "o1",
+      "formula": "f2 / (f1 / 100)",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.355Z",
-  "updatedAt": "2026-03-06T13:16:04.355Z"
+  "createdAt": "2026-03-06T14:19:02.337Z",
+  "updatedAt": "2026-03-06T14:19:02.337Z"
 }

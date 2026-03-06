@@ -15,8 +15,17 @@
       "label": "Triglycerides"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_na",
+      "label": "Corrected Na",
+      "formula": "na + 0.002 * triglycerides",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.172Z",
-  "updatedAt": "2026-03-06T13:16:04.172Z"
+  "createdAt": "2026-03-06T14:19:02.145Z",
+  "updatedAt": "2026-03-06T14:19:02.145Z"
 }

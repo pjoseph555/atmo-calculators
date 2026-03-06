@@ -22,9 +22,16 @@
       "label": "LR (pos)",
       "formula": "sensitivity / (1 - specificity / 100) / 100",
       "precision": 2
+    },
+    {
+      "type": "numeric",
+      "id": "lr_neg",
+      "label": "LR (neg)",
+      "formula": "(1 - sensitivity / 100) / specificity * 100",
+      "precision": 2
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.303Z",
-  "updatedAt": "2026-03-06T13:16:04.303Z"
+  "createdAt": "2026-03-06T14:19:02.286Z",
+  "updatedAt": "2026-03-06T14:19:02.286Z"
 }

@@ -26,8 +26,17 @@
       "label": "Desired Factor IX increase"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "dosage_required",
+      "label": "Dosage Required",
+      "formula": "weight * desired_factor_ix_increase * 1",
+      "precision": 2,
+      "defaultUnit": "IU"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.973Z",
-  "updatedAt": "2026-03-06T13:16:03.973Z"
+  "createdAt": "2026-03-06T14:19:01.965Z",
+  "updatedAt": "2026-03-06T14:19:01.965Z"
 }

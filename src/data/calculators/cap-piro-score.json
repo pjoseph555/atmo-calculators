@@ -125,8 +125,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "copd_or_immunocompr + age_70_yrs + bacteremia + shock + acute_renal_failure + multilobal_opacities + severe_hypoxemia + ards",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.128Z",
-  "updatedAt": "2026-03-06T13:16:04.128Z"
+  "createdAt": "2026-03-06T14:19:02.101Z",
+  "updatedAt": "2026-03-06T14:19:02.101Z"
 }

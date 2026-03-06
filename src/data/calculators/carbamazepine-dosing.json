@@ -2,7 +2,7 @@
   "id": "carbamazepine-dosing",
   "name": "Carbamazepine Dosing",
   "status": "active",
-  "complexity": "moderate",
+  "complexity": "complex",
   "inputs": [
     {
       "type": "dropdown",
@@ -51,9 +51,17 @@
       "formula": "IF(sex == 1, IF(50 + 2.3 * (height - 60) > 0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 3 * (0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 3 * (50 + 2.3 * (height - 60))), IF(45.5 + 2.3 * (height - 60) > 0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 3 * (0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 3 * (45.5 + 2.3 * (height - 60))))",
       "precision": 2,
       "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "maintenance_dose",
+      "label": "Maintenance Dose",
+      "formula": "IF(sex == 1, IF(50 + 2.3 * (height - 60) > 0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 10 * (0.6 * (50 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 10 * (50 + 2.3 * (height - 60))), IF(45.5 + 2.3 * (height - 60) > 0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight, 10 * (0.6 * (45.5 + 2.3 * (height - 60)) + 0.4 * actual_total_weight), 10 * (45.5 + 2.3 * (height - 60))))",
+      "precision": 2,
+      "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.516Z",
-  "updatedAt": "2026-03-06T13:16:04.516Z"
+  "createdAt": "2026-03-06T14:19:02.494Z",
+  "updatedAt": "2026-03-06T14:19:02.494Z"
 }

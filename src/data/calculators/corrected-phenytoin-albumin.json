@@ -30,8 +30,17 @@
       "label": "Albumin"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_level",
+      "label": "Corrected level",
+      "formula": "IF(patient_s_calculated_creatinine_clearanc == 1, phenytoin_level / (0.1 * albumin + 0.1), phenytoin_level / (0.2 * albumin + 0.1))",
+      "precision": 2,
+      "defaultUnit": "mg/L"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.153Z",
-  "updatedAt": "2026-03-06T13:16:04.153Z"
+  "createdAt": "2026-03-06T14:19:02.124Z",
+  "updatedAt": "2026-03-06T14:19:02.124Z"
 }

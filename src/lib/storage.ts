@@ -22,7 +22,7 @@ function filePath(id: string) {
 
 export function listCalculators(): CalculatorDefinition[] {
   ensureDataDir();
-  const files = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+  const files = fs.readdirSync(DATA_DIR).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
   return files.map((f) => {
     const raw = fs.readFileSync(path.join(DATA_DIR, f), "utf-8");
     return JSON.parse(raw) as CalculatorDefinition;

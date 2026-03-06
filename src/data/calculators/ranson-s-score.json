@@ -170,8 +170,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "age_55_yr + wbc_16_g_l + glucose_11_1_mmol_l + ldh_350_ui_l + sgot_ast_250_ui_l + hematocrit_fall_10 + urea_increase_1_8_mmol_l + ca_80_mg_l + f9 + base_deficit_4_meq_l + fluid_sequestration_6_l",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.392Z",
-  "updatedAt": "2026-03-06T13:16:04.392Z"
+  "createdAt": "2026-03-06T14:19:02.373Z",
+  "updatedAt": "2026-03-06T14:19:02.373Z"
 }

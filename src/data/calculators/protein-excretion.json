@@ -20,8 +20,17 @@
       "label": "Body Surface Area"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "proteinuria",
+      "label": "Proteinuria",
+      "formula": "urine_protein / urine_creatinine * 8.8 * body_surface_area / 1.73 * 10000",
+      "precision": 2,
+      "defaultUnit": "g/24hr/1.73m^2"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.383Z",
-  "updatedAt": "2026-03-06T13:16:04.383Z"
+  "createdAt": "2026-03-06T14:19:02.365Z",
+  "updatedAt": "2026-03-06T14:19:02.365Z"
 }

@@ -46,9 +46,16 @@
       "formula": "o1 - f1",
       "precision": 2,
       "defaultUnit": "mmHg"
+    },
+    {
+      "type": "numeric",
+      "id": "a_a_ratio",
+      "label": "a/A ratio",
+      "formula": "f1 / o1",
+      "precision": 2
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.081Z",
-  "updatedAt": "2026-03-06T13:16:04.081Z"
+  "createdAt": "2026-03-06T14:19:02.059Z",
+  "updatedAt": "2026-03-06T14:19:02.059Z"
 }

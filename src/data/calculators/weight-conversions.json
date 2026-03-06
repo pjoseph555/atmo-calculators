@@ -37,8 +37,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "weight_2",
+      "label": "Weight",
+      "formula": "weight * 2.20462262",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.036Z",
-  "updatedAt": "2026-03-06T13:16:04.036Z"
+  "createdAt": "2026-03-06T14:19:02.028Z",
+  "updatedAt": "2026-03-06T14:19:02.028Z"
 }

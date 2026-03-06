@@ -20,8 +20,17 @@
       "label": "Tank Volume"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "time_left",
+      "label": "Time Left",
+      "formula": "tank_volume * tank_pressure / flow_rate",
+      "precision": 2,
+      "defaultUnit": "min"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.350Z",
-  "updatedAt": "2026-03-06T13:16:04.350Z"
+  "createdAt": "2026-03-06T14:19:02.333Z",
+  "updatedAt": "2026-03-06T14:19:02.333Z"
 }

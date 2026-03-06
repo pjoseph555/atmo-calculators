@@ -15,8 +15,17 @@
       "label": "Patient albumin"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "corrected_ca",
+      "label": "Corrected Ca",
+      "formula": "serum_ca + 0.8 * (4.0 - patient_albumin)",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.158Z",
-  "updatedAt": "2026-03-06T13:16:04.158Z"
+  "createdAt": "2026-03-06T14:19:02.131Z",
+  "updatedAt": "2026-03-06T14:19:02.131Z"
 }

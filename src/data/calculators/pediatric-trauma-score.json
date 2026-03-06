@@ -119,8 +119,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "weight + airways + systolic_bp + cns + cutaneous_wound + fracture",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.360Z",
-  "updatedAt": "2026-03-06T13:16:04.360Z"
+  "createdAt": "2026-03-06T14:19:02.342Z",
+  "updatedAt": "2026-03-06T14:19:02.342Z"
 }

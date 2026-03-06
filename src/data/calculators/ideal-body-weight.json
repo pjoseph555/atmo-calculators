@@ -36,8 +36,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "ideal_body_weight",
+      "label": "Ideal Body Weight",
+      "formula": "IF(sex == 1, 50 + 2.3 * (height - 60), 45.5 + 2.3 * (height - 60))",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.950Z",
-  "updatedAt": "2026-03-06T13:16:03.950Z"
+  "createdAt": "2026-03-06T14:19:01.939Z",
+  "updatedAt": "2026-03-06T14:19:01.939Z"
 }

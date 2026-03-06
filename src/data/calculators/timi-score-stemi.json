@@ -133,9 +133,17 @@
       "formula": "age + dm_or_htn_or_angina + sbp_100_mmhg + hr_100_bpm + killip_class_ii_iv + weight_67_kg + anterior_ste_or_lbbb + time_to_treatment_4_hrs",
       "precision": 2,
       "defaultUnit": "pts"
+    },
+    {
+      "type": "numeric",
+      "id": "risk",
+      "label": "Risk",
+      "formula": "IF(timi_score == 0, 0.1, IF(timi_score == 1, 0.3, IF(timi_score == 2, 0.4, IF(timi_score == 3, 0.7, IF(timi_score == 4, 1.2, IF(timi_score == 5, 2.2, IF(timi_score == 6, 3.0, IF(timi_score == 7, 4.8, IF(timi_score == 8, 5.8, 8.8)))))))))",
+      "precision": 2,
+      "defaultUnit": "Odds of death by 30 days"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.439Z",
-  "updatedAt": "2026-03-06T13:16:04.439Z"
+  "createdAt": "2026-03-06T14:19:02.419Z",
+  "updatedAt": "2026-03-06T14:19:02.419Z"
 }

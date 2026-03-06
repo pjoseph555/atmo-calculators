@@ -38,9 +38,17 @@
       "formula": "f1 / (13.4 * hemoglobin * (f3 - f4) / 100)",
       "precision": 2,
       "defaultUnit": "L/min"
+    },
+    {
+      "type": "numeric",
+      "id": "cardiac_index",
+      "label": "Cardiac Index",
+      "formula": "cardiac_output / bsa",
+      "precision": 2,
+      "defaultUnit": "L/min/m^2"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.139Z",
-  "updatedAt": "2026-03-06T13:16:04.139Z"
+  "createdAt": "2026-03-06T14:19:02.110Z",
+  "updatedAt": "2026-03-06T14:19:02.110Z"
 }

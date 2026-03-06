@@ -15,8 +15,17 @@
       "label": "Diastolic BP"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "mean_arterial_pressure",
+      "label": "Mean Arterial Pressure",
+      "formula": "diastolic_bp + (systolic_bp - diastolic_bp) / 3",
+      "precision": 2,
+      "defaultUnit": "mmHg"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.010Z",
-  "updatedAt": "2026-03-06T13:16:04.010Z"
+  "createdAt": "2026-03-06T14:19:02.001Z",
+  "updatedAt": "2026-03-06T14:19:02.001Z"
 }

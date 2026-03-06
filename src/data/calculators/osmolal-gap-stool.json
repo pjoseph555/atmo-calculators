@@ -20,8 +20,17 @@
       "label": "Serum Osmolality"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "osmolal_gap",
+      "label": "Osmolal Gap",
+      "formula": "serum_osmolality - 2 * (stool_na + stool_k)",
+      "precision": 2,
+      "defaultUnit": "mosm/kg"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.341Z",
-  "updatedAt": "2026-03-06T13:16:04.341Z"
+  "createdAt": "2026-03-06T14:19:02.322Z",
+  "updatedAt": "2026-03-06T14:19:02.322Z"
 }

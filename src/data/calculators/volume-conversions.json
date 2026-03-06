@@ -69,8 +69,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "quantity_2",
+      "label": "Quantity",
+      "formula": "quantity",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.960Z",
-  "updatedAt": "2026-03-06T13:16:03.960Z"
+  "createdAt": "2026-03-06T14:19:01.949Z",
+  "updatedAt": "2026-03-06T14:19:01.949Z"
 }

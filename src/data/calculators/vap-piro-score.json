@@ -2,7 +2,7 @@
   "id": "vap-piro-score",
   "name": "VAP PIRO Score",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "dropdown",
@@ -65,8 +65,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "comorbidities + bacteremia + systolic_bp_90_mmhg + ards",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.456Z",
-  "updatedAt": "2026-03-06T13:16:04.456Z"
+  "createdAt": "2026-03-06T14:19:02.437Z",
+  "updatedAt": "2026-03-06T14:19:02.437Z"
 }

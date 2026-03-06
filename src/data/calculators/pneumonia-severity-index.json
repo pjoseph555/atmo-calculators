@@ -295,8 +295,17 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "IF(gender == 1, age + nursing_home_resident + neoplastic_disease + liver_disease + congestive_heart_failure + cerebrovascular_disease + renal_disease + altered_mental_status + respiratory_rate_30_min + sbp_90mmhg + temperature_35_or_40c + pulse_125_min + arterial_ph_7_35 + urea_11_mmol_l + na_130_mmol_l + glucose_14_mmol_l + hematocrit_30 + f19 + pleural_effusion, age + nursing_home_resident + neoplastic_disease + liver_disease + congestive_heart_failure + cerebrovascular_disease + renal_disease + altered_mental_status + respiratory_rate_30_min + sbp_90mmhg + temperature_35_or_40c + pulse_125_min + arterial_ph_7_35 + urea_11_mmol_l + na_130_mmol_l + glucose_14_mmol_l + hematocrit_30 + f19 + pleural_effusion - 10)",
+      "precision": 2,
+      "defaultUnit": "pts"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.370Z",
-  "updatedAt": "2026-03-06T13:16:04.370Z"
+  "createdAt": "2026-03-06T14:19:02.351Z",
+  "updatedAt": "2026-03-06T14:19:02.351Z"
 }

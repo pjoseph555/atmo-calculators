@@ -2,7 +2,7 @@
   "id": "fract-excr-of-na-fena",
   "name": "Fract Excr of Na (FENa)",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,17 @@
       "label": "U Creatinine"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "f_e_na",
+      "label": "F.E. Na",
+      "formula": "u_na * pi_creatinine / (pi_na * u_creatinine) * 100",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.234Z",
-  "updatedAt": "2026-03-06T13:16:04.234Z"
+  "createdAt": "2026-03-06T14:19:02.212Z",
+  "updatedAt": "2026-03-06T14:19:02.212Z"
 }

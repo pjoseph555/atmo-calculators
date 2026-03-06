@@ -118,9 +118,17 @@
       "formula": "age_65_yrs + v3_cad_risk_factors + known_cad_50_stenosis + aspirin_use_in_the_past_7_days + severe_angina_in_last_24_hrs + elevated_cardiac_markers + stdeviation_0_5_mm",
       "precision": 2,
       "defaultUnit": "pts"
+    },
+    {
+      "type": "numeric",
+      "id": "risk",
+      "label": "Risk",
+      "formula": "IF(timi_score == 0 OR timi_score == 1, 5, IF(timi_score == 2, 8, IF(timi_score == 3, 13, IF(timi_score == 4, 20, IF(timi_score == 5, 26, 41)))))",
+      "precision": 2,
+      "defaultUnit": "%"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.434Z",
-  "updatedAt": "2026-03-06T13:16:04.434Z"
+  "createdAt": "2026-03-06T14:19:02.415Z",
+  "updatedAt": "2026-03-06T14:19:02.415Z"
 }

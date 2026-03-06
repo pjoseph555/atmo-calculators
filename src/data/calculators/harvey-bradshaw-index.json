@@ -2,7 +2,7 @@
   "id": "harvey-bradshaw-index",
   "name": "Harvey Bradshaw Index",
   "status": "active",
-  "complexity": "moderate",
+  "complexity": "complex",
   "inputs": [
     {
       "type": "numeric",
@@ -203,8 +203,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "number_of_liquid_stools + general_well_being + abdominal_pain + abdominal_mass + arthralgia + uveitis + erythema_nodosum + aphtous_ulcers + pyoderma_gangrenosum + anal_fissure + new_fistula + abscess",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.266Z",
-  "updatedAt": "2026-03-06T13:16:04.266Z"
+  "createdAt": "2026-03-06T14:19:02.247Z",
+  "updatedAt": "2026-03-06T14:19:02.247Z"
 }

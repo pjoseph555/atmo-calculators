@@ -135,8 +135,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "cardiovascular_vasopressor_doses_in_ug_k + f2 + liver_bilirubin + central_nervous_system_glasgow_coma_scor + renal + f6",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.421Z",
-  "updatedAt": "2026-03-06T13:16:04.421Z"
+  "createdAt": "2026-03-06T14:19:02.401Z",
+  "updatedAt": "2026-03-06T14:19:02.401Z"
 }

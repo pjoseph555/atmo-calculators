@@ -10,8 +10,17 @@
       "label": "Weight"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "iv_fluids",
+      "label": "IV Fluids",
+      "formula": "IF(weight <= 10 AND weight * 100 <= 2400, weight * 100, IF(weight <= 20 AND weight > 10 AND 10 * 100 + (weight - 10) * 50 <= 2400, 10 * 100 + (weight - 10) * 50, IF(weight <= 30 AND weight > 20 AND 10 * 150 + (weight - 20) * 20 <= 2400, 10 * 150 + (weight - 20) * 20, IF(weight > 30 AND 10 * 170 + (weight - 30) * 10 <= 2400, 10 * 170 + (weight - 30) * 10, 2400))))",
+      "precision": 2,
+      "defaultUnit": "mL/24hr"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.316Z",
-  "updatedAt": "2026-03-06T13:16:04.316Z"
+  "createdAt": "2026-03-06T14:19:02.300Z",
+  "updatedAt": "2026-03-06T14:19:02.300Z"
 }

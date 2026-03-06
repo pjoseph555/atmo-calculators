@@ -2,7 +2,7 @@
   "id": "tubular-po4-reabsorption",
   "name": "Tubular PO4 Reabsorption",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,17 @@
       "label": "U Creatinine"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "trp",
+      "label": "TRP",
+      "formula": "(1 - u_phosphate * pi_creatinine / (pi_phosphate * u_creatinine)) * 100",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.447Z",
-  "updatedAt": "2026-03-06T13:16:04.447Z"
+  "createdAt": "2026-03-06T14:19:02.428Z",
+  "updatedAt": "2026-03-06T14:19:02.428Z"
 }

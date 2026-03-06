@@ -20,8 +20,16 @@
       "label": "U Cl"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "urinary_anion_gap_mmol_l",
+      "label": "Urinary Anion Gap (mmol/L)",
+      "formula": "u_na + u_k - u_cl",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.103Z",
-  "updatedAt": "2026-03-06T13:16:04.103Z"
+  "createdAt": "2026-03-06T14:19:02.078Z",
+  "updatedAt": "2026-03-06T14:19:02.078Z"
 }

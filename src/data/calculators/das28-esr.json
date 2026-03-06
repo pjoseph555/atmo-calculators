@@ -2,7 +2,7 @@
   "id": "das28-esr",
   "name": "DAS28 (ESR)",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,16 @@
       "label": "Erythrocyte Sedimentation Rate"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "disease_activity_score",
+      "label": "Disease Activity Score",
+      "formula": "0.56 * number_of_tender_joints ^ 0.5 + 0.28 * number_of_swollen_joints ^ 0.5 + 0.014 * general_health + 0.70 * ln(erythrocyte_sedimentation_rate)",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.486Z",
-  "updatedAt": "2026-03-06T13:16:04.486Z"
+  "createdAt": "2026-03-06T14:19:02.464Z",
+  "updatedAt": "2026-03-06T14:19:02.464Z"
 }

@@ -35,8 +35,17 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "clearance",
+      "label": "Clearance",
+      "formula": "IF(gender == 1, 1.23 * weight * (140 - age) / serum_creatinine, 1.03 * weight * (140 - age) / serum_creatinine)",
+      "precision": 2,
+      "defaultUnit": "mL/min"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.248Z",
-  "updatedAt": "2026-03-06T13:16:04.248Z"
+  "createdAt": "2026-03-06T14:19:02.227Z",
+  "updatedAt": "2026-03-06T14:19:02.227Z"
 }

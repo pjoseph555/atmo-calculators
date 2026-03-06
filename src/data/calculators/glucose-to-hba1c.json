@@ -10,8 +10,17 @@
       "label": "Mean Plasma Glucose"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "hba1c",
+      "label": "HbA1C",
+      "formula": "(mean_plasma_glucose + 77.3) / 35.6",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.984Z",
-  "updatedAt": "2026-03-06T13:16:03.984Z"
+  "createdAt": "2026-03-06T14:19:01.975Z",
+  "updatedAt": "2026-03-06T14:19:01.975Z"
 }

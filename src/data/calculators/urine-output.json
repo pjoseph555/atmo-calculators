@@ -20,8 +20,17 @@
       "label": "per"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "urine_output",
+      "label": "Urine Output",
+      "formula": "amount_of_urine * 1000 / weight / per",
+      "precision": 2,
+      "defaultUnit": "mL/kg/hr"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.452Z",
-  "updatedAt": "2026-03-06T13:16:04.452Z"
+  "createdAt": "2026-03-06T14:19:02.432Z",
+  "updatedAt": "2026-03-06T14:19:02.432Z"
 }

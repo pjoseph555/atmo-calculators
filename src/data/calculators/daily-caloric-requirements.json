@@ -88,8 +88,17 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "total_calorie_needs",
+      "label": "Total Calorie Needs",
+      "formula": "IF(sex == 1, (66.5 + 13.75 * weight + 5.003 * height - 6.775 * age) * activity_level, (655.1 + 9.563 * weight + 1.85 * height - 4.676 * age) * activity_level)",
+      "precision": 2,
+      "defaultUnit": "kcal/day"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.020Z",
-  "updatedAt": "2026-03-06T13:16:04.020Z"
+  "createdAt": "2026-03-06T14:19:02.013Z",
+  "updatedAt": "2026-03-06T14:19:02.013Z"
 }

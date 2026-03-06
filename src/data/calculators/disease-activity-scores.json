@@ -2,7 +2,7 @@
   "id": "disease-activity-scores",
   "name": "Disease Activity Scores",
   "status": "active",
-  "complexity": "moderate",
+  "complexity": "complex",
   "inputs": [
     {
       "type": "numeric",
@@ -38,9 +38,17 @@
       "formula": "0.56 * sqrt(tender_joint_count) + 0.28 * sqrt(swollen_joint_count) + 0.70 * ln(erythrocyte_sedimentation_rate) + 0.014 * subject_assessment",
       "precision": 2,
       "defaultUnit": "units"
+    },
+    {
+      "type": "numeric",
+      "id": "disease_activity",
+      "label": "Disease Activity",
+      "formula": "IF(current_das <= 3.2 AND current_das - initial_das > 1.2, 1, IF(current_das <= 3.2 AND current_das - initial_das > 0.6 AND current_das - initial_das <= 1.2, 2, IF(current_das <= 3.2 AND current_das - initial_das <= 0.6, 3, IF(current_das > 3.2 AND current_das <= 5.1 AND current_das - initial_das > 0.6, 2, IF(current_das > 3.2 AND current_das <= 5.1 AND current_das - initial_das <= 0.6, 3, IF(current_das > 5.1 AND current_das - initial_das > 1.2, 2, 3))))))",
+      "precision": 2,
+      "defaultUnit": "units"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.205Z",
-  "updatedAt": "2026-03-06T13:16:04.205Z"
+  "createdAt": "2026-03-06T14:19:02.180Z",
+  "updatedAt": "2026-03-06T14:19:02.180Z"
 }

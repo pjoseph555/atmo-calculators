@@ -80,8 +80,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "IF(chf_history + hematocrit_30 + ecg_abnormal + shortness_of_breath_history + sbp_90_mmhg_at_triage >= 1, 1, 0)",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.416Z",
-  "updatedAt": "2026-03-06T13:16:04.416Z"
+  "createdAt": "2026-03-06T14:19:02.396Z",
+  "updatedAt": "2026-03-06T14:19:02.396Z"
 }

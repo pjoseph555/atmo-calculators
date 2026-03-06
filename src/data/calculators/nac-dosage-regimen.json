@@ -26,9 +26,17 @@
       "formula": "50 * patient_s_weight",
       "precision": 2,
       "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "next_16_hours",
+      "label": "Next 16 hours",
+      "formula": "100 * patient_s_weight",
+      "precision": 2,
+      "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.331Z",
-  "updatedAt": "2026-03-06T13:16:04.331Z"
+  "createdAt": "2026-03-06T14:19:02.313Z",
+  "updatedAt": "2026-03-06T14:19:02.313Z"
 }

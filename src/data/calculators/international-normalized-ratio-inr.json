@@ -20,8 +20,16 @@
       "label": "International Sensitivity Index (ISI)"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "inr",
+      "label": "INR",
+      "formula": "(prothrombin_time_patient / prothrombin_time_normal) ^ international_sensitivity_index_isi",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.005Z",
-  "updatedAt": "2026-03-06T13:16:04.005Z"
+  "createdAt": "2026-03-06T14:19:01.996Z",
+  "updatedAt": "2026-03-06T14:19:01.996Z"
 }

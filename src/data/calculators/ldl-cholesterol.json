@@ -2,7 +2,7 @@
   "id": "ldl-cholesterol",
   "name": "LDL Cholesterol",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -28,9 +28,17 @@
       "formula": "triglycerides / 5",
       "precision": 2,
       "defaultUnit": "mg/dL"
+    },
+    {
+      "type": "numeric",
+      "id": "ldl",
+      "label": "LDL",
+      "formula": "total_cholesterol - hdl - triglycerides / 5",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.298Z",
-  "updatedAt": "2026-03-06T13:16:04.298Z"
+  "createdAt": "2026-03-06T14:19:02.281Z",
+  "updatedAt": "2026-03-06T14:19:02.281Z"
 }

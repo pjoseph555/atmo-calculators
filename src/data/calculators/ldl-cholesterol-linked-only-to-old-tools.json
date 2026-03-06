@@ -20,8 +20,17 @@
       "label": "Triglycerides"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "ldl_cholesterol",
+      "label": "LDL Cholesterol",
+      "formula": "total_cholesterol - hdl_cholesterol - triglycerides / 5",
+      "precision": 2,
+      "defaultUnit": "mg/dL"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.995Z",
-  "updatedAt": "2026-03-06T13:16:03.995Z"
+  "createdAt": "2026-03-06T14:19:01.984Z",
+  "updatedAt": "2026-03-06T14:19:01.984Z"
 }

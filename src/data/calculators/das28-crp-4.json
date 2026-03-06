@@ -2,7 +2,7 @@
   "id": "das28-crp-4",
   "name": "DAS28 (CRP-4)",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,16 @@
       "label": "C-reactive Protein"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "disease_activity_score",
+      "label": "Disease Activity Score",
+      "formula": "0.56 * number_of_tender_joints ^ 0.5 + 0.28 * number_of_swollen_joints ^ 0.5 + 0.014 * general_health + 0.36 * ln(c_reactive_protein + 1) + 0.96",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.492Z",
-  "updatedAt": "2026-03-06T13:16:04.492Z"
+  "createdAt": "2026-03-06T14:19:02.468Z",
+  "updatedAt": "2026-03-06T14:19:02.468Z"
 }

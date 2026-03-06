@@ -226,8 +226,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "IF(head_and_neck == 6 OR face == 6 OR thorax == 6 OR abdomen == 6 OR extremities == 6 OR external == 6, 75, head_and_neck ^ 2 + face ^ 2 + thorax ^ 2 + abdomen ^ 2 + extremities ^ 2 + external ^ 2)",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.289Z",
-  "updatedAt": "2026-03-06T13:16:04.289Z"
+  "createdAt": "2026-03-06T14:19:02.271Z",
+  "updatedAt": "2026-03-06T14:19:02.271Z"
 }

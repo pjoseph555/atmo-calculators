@@ -355,9 +355,17 @@
       "formula": "target_steady_state_concentration_css * clearance_of_salt_cls * 8 / (f * salt_factors_s)",
       "precision": 2,
       "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "iv_to_oral_dose_conversion",
+      "label": "IV to Oral Dose Conversion",
+      "formula": "salt_factors_s * iv_continuous_infusion_dose * 24",
+      "precision": 2,
+      "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.512Z",
-  "updatedAt": "2026-03-06T13:16:04.512Z"
+  "createdAt": "2026-03-06T14:19:02.488Z",
+  "updatedAt": "2026-03-06T14:19:02.488Z"
 }

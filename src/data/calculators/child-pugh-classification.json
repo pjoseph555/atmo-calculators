@@ -96,8 +96,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "grade",
+      "label": "Grade",
+      "formula": "ascites + albumin + bilirubin + encephalopathy + inr_pt",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.148Z",
-  "updatedAt": "2026-03-06T13:16:04.148Z"
+  "createdAt": "2026-03-06T14:19:02.120Z",
+  "updatedAt": "2026-03-06T14:19:02.120Z"
 }

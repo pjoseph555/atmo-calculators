@@ -133,9 +133,17 @@
       "formula": "length_of_infusion * elimination_rate * volume_of_distribution * cmax / (1 - 1 / 2.71828 ^ (elimination_rate * length_of_infusion))",
       "precision": 2,
       "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "maitenance_dosing_for_iv_infusion",
+      "label": "Maitenance Dosing for IV Infusion",
+      "formula": "length_of_infusion * elimination_rate * volume_of_distribution * cmax * ((1 - 1 / 2.71828 ^ (elimination_rate * dosing_interval)) / (1 - 1 / 2.71828 ^ (elimination_rate * length_of_infusion)))",
+      "precision": 2,
+      "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.502Z",
-  "updatedAt": "2026-03-06T13:16:04.502Z"
+  "createdAt": "2026-03-06T14:19:02.478Z",
+  "updatedAt": "2026-03-06T14:19:02.478Z"
 }

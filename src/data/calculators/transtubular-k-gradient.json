@@ -2,7 +2,7 @@
   "id": "transtubular-k-gradient",
   "name": "Transtubular K Gradient",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,16 @@
       "label": "Urine Osmolality"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "ttkg",
+      "label": "TTKG",
+      "formula": "urine_k * serum_osmolality / (urine_osmolality * serum_k)",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.443Z",
-  "updatedAt": "2026-03-06T13:16:04.443Z"
+  "createdAt": "2026-03-06T14:19:02.424Z",
+  "updatedAt": "2026-03-06T14:19:02.424Z"
 }

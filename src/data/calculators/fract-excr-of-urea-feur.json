@@ -2,7 +2,7 @@
   "id": "fract-excr-of-urea-feur",
   "name": "Fract Excr of Urea (FEUr)",
   "status": "active",
-  "complexity": "simple",
+  "complexity": "moderate",
   "inputs": [
     {
       "type": "numeric",
@@ -25,8 +25,17 @@
       "label": "U Creatinine"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "f_e_urea",
+      "label": "F.E. Urea",
+      "formula": "u_bun * pi_creatinine / (pi_bun * u_creatinine) * 100",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.239Z",
-  "updatedAt": "2026-03-06T13:16:04.239Z"
+  "createdAt": "2026-03-06T14:19:02.217Z",
+  "updatedAt": "2026-03-06T14:19:02.217Z"
 }

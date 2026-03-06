@@ -142,9 +142,17 @@
       "formula": "IF(nyha_class == 40, desired_css * 0.06 * (1.303 * ((140 - age) * actual_total_weight * sex / (72 * serum_creatinine)) + 40) / f_form * dosage_interval, desired_css * 0.06 * (1.303 * ((140 - age) * actual_total_weight * sex / (72 * serum_creatinine)) + 20) / f_form * dosage_interval)",
       "precision": 2,
       "defaultUnit": "mcg"
+    },
+    {
+      "type": "numeric",
+      "id": "maintenance_dose_po",
+      "label": "Maintenance Dose (PO)",
+      "formula": "maintenance_dose_iv / f_form",
+      "precision": 2,
+      "defaultUnit": "mcg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.481Z",
-  "updatedAt": "2026-03-06T13:16:04.481Z"
+  "createdAt": "2026-03-06T14:19:02.459Z",
+  "updatedAt": "2026-03-06T14:19:02.459Z"
 }

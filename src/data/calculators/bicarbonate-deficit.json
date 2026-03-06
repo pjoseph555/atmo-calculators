@@ -15,8 +15,17 @@
       "label": "f2"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "bicarbonate_deficit",
+      "label": "Bicarbonate Deficit",
+      "formula": "0.4 * weight * (24 - f2)",
+      "precision": 2,
+      "defaultUnit": "mmol"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.118Z",
-  "updatedAt": "2026-03-06T13:16:04.118Z"
+  "createdAt": "2026-03-06T14:19:02.092Z",
+  "updatedAt": "2026-03-06T14:19:02.092Z"
 }

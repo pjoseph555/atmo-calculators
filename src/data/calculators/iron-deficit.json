@@ -20,8 +20,17 @@
       "label": "Actual Hb"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "iron_deficit",
+      "label": "Iron Deficit",
+      "formula": "IF(weight > 33.33, weight * (target_hb - actual_hb) * 0.24 + 500, weight * (target_hb - actual_hb) * 0.24 + 15 * weight)",
+      "precision": 2,
+      "defaultUnit": "mg"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.294Z",
-  "updatedAt": "2026-03-06T13:16:04.294Z"
+  "createdAt": "2026-03-06T14:19:02.275Z",
+  "updatedAt": "2026-03-06T14:19:02.275Z"
 }

@@ -29,8 +29,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "length_2",
+      "label": "Length",
+      "formula": "length",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.000Z",
-  "updatedAt": "2026-03-06T13:16:04.000Z"
+  "createdAt": "2026-03-06T14:19:01.989Z",
+  "updatedAt": "2026-03-06T14:19:01.989Z"
 }

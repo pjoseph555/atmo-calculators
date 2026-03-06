@@ -35,8 +35,17 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "post_test_probability",
+      "label": "Post-test probability",
+      "formula": "IF(test_result == 1, pre_test_probability * sensitivity * 0.0001 / (pre_test_probability * sensitivity * 0.0001 + (1 - pre_test_probability * 0.01) * (1 - specificity * 0.01)) * 100, pre_test_probability * 0.01 * (1 - sensitivity * 0.01) / (pre_test_probability * 0.01 * (1 - sensitivity * 0.01) + (1 - pre_test_probability * 0.01) * specificity * 0.01) * 100)",
+      "precision": 2,
+      "defaultUnit": "%"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.374Z",
-  "updatedAt": "2026-03-06T13:16:04.374Z"
+  "createdAt": "2026-03-06T14:19:02.356Z",
+  "updatedAt": "2026-03-06T14:19:02.356Z"
 }

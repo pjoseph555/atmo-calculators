@@ -33,9 +33,17 @@
       "formula": "3.1415926536 * heart_rate * lvot_diameter ^ 2 * time_velocity_integral / 4 / 1000",
       "precision": 2,
       "defaultUnit": "L/min"
+    },
+    {
+      "type": "numeric",
+      "id": "cardiac_index",
+      "label": "Cardiac Index",
+      "formula": "cardiac_output / bsa",
+      "precision": 2,
+      "defaultUnit": "L/min/m^2"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.134Z",
-  "updatedAt": "2026-03-06T13:16:04.134Z"
+  "createdAt": "2026-03-06T14:19:02.105Z",
+  "updatedAt": "2026-03-06T14:19:02.105Z"
 }

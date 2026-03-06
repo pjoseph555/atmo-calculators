@@ -20,8 +20,17 @@
       "label": "Serum bicarbonate level"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "anion_gap",
+      "label": "Anion gap",
+      "formula": "serum_sodium_level - (serum_chloride_level + serum_bicarbonate_level)",
+      "precision": 2,
+      "defaultUnit": "mEq/L"
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:03.964Z",
-  "updatedAt": "2026-03-06T13:16:03.964Z"
+  "createdAt": "2026-03-06T14:19:01.954Z",
+  "updatedAt": "2026-03-06T14:19:01.954Z"
 }

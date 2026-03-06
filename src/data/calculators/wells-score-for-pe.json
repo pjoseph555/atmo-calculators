@@ -110,8 +110,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "scores",
+      "label": "Scores:",
+      "formula": "clinical_signs_and_symptoms_of_dvt + pe_is_most_likely_diagnosis + tachycardia_100_bpm + immobilization_or_surgery_in_the_previou + previously_diagnosed_dvt_or_pe + hemoptysis + active_malignancy",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.472Z",
-  "updatedAt": "2026-03-06T13:16:04.472Z"
+  "createdAt": "2026-03-06T14:19:02.450Z",
+  "updatedAt": "2026-03-06T14:19:02.450Z"
 }

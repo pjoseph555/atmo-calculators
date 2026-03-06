@@ -125,8 +125,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score:",
+      "formula": "age_65_yrs + previous_dvt_or_pe + surgery_within_1_month + active_malignancy + unilateral_lower_limb_pain + hemoptysis + pain_on_lower_limb_deep_venous_palpation + heart_rate",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.243Z",
-  "updatedAt": "2026-03-06T13:16:04.243Z"
+  "createdAt": "2026-03-06T14:19:02.222Z",
+  "updatedAt": "2026-03-06T14:19:02.222Z"
 }

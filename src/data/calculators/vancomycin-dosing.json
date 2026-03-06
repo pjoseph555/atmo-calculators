@@ -143,9 +143,17 @@
       "formula": "cmax * volume_of_distribution",
       "precision": 2,
       "defaultUnit": "mg"
+    },
+    {
+      "type": "numeric",
+      "id": "maintenance_dosing",
+      "label": "Maintenance Dosing",
+      "formula": "cmax * volume_of_distribution * (1 - 1 / 2.71828 ^ (elimination_rate * dosing_interval))",
+      "precision": 2,
+      "defaultUnit": "mg"
     }
   ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.507Z",
-  "updatedAt": "2026-03-06T13:16:04.507Z"
+  "createdAt": "2026-03-06T14:19:02.483Z",
+  "updatedAt": "2026-03-06T14:19:02.483Z"
 }

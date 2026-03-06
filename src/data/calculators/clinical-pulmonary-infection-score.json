@@ -118,8 +118,16 @@
       ]
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "type": "numeric",
+      "id": "score",
+      "label": "Score",
+      "formula": "tracheal_secr + chest_x_ray + temperature + white_cell_count + f5 + progression + culture",
+      "precision": 2
+    }
+  ],
   "version": 1,
-  "createdAt": "2026-03-06T13:16:04.181Z",
-  "updatedAt": "2026-03-06T13:16:04.181Z"
+  "createdAt": "2026-03-06T14:19:02.156Z",
+  "updatedAt": "2026-03-06T14:19:02.156Z"
 }

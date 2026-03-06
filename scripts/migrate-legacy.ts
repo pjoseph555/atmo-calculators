@@ -154,7 +154,7 @@ function rpnToInfix(rpn: string, fieldMap: Record<string, string>): string {
 interface LegacyField {
   id: string;       // f1, f2, o1, o2 etc.
   label: string;
-  type: "input_float" | "input_dropdown" | "input_date" | "output_float" | "output_hidden";
+  type: "input_float" | "input_dropdown" | "input_date" | "output_float" | "output_hidden" | "output_date";
   units?: { label: string; value: number }[];  // for input_float with units
   options?: { label: string; value: number }[]; // for input_dropdown
   unitLabel?: string;  // for output_float with a fixed unit label
@@ -233,6 +233,10 @@ function parseHtml(html: string, fileId: string): LegacyCalc {
 
     } else if (fieldType === "output_hidden") {
       fields.push({ id: fieldId, label, type: "output_hidden" });
+
+    } else if (fieldType === "output_date") {
+      // Add to fieldMap so formula references resolve, but skip CalcOutput generation.
+      fields.push({ id: fieldId, label, type: "output_date" });
     }
   }
 
